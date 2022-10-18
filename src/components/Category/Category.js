@@ -29,7 +29,7 @@ export default function Category() {
                     })}
             </Box>
             <Box sx={{ display: { sm: 'none', xs: 'block' } }}>
-                <Accordio>
+                <Accordio title='Category'>
                     <Box sx={{ display: 'flex', justifyContent: 'space-between', flexWrap: { xs: 'wrap', lg: 'nowrap' } }}>
                         {
                             category.map(component => {

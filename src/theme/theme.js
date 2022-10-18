@@ -19,7 +19,7 @@ export default function Theme({ children }) {
             }
         },
         typography: {
-            fontFamily: 'Inter, Quicksand, Roboto',
+            fontFamily: `'Inter', 'Quicksand', 'Roboto'`,
             fontSize: 16
         },
         breakpoints: {
