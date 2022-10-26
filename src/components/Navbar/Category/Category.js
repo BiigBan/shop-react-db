@@ -6,6 +6,7 @@ import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import { Box } from '@mui/system'
 import React, { useState } from 'react'
 import {useNavigate } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 
 export default function Category() {
 
@@ -14,6 +15,7 @@ export default function Category() {
     const [openSecondComputer, setOpenSecondComputer] = useState(false);
     const [openSecondClothes, setOpenSecondClothes] = useState(false);
     const [openSecondJewelery, setOpenSecondJewelery] = useState(false);
+    const grid = useSelector(state => state.global.grid)
     const theme = useTheme()
     const navigate = useNavigate();
 
@@ -22,7 +24,7 @@ export default function Category() {
         if (text === 'men\'s clothing') {
             text = 'man\'s clothing'
         }
-        navigate(`product/${text}`)
+        navigate(`product/${text}/${grid}`)
     }
 
 

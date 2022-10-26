@@ -4,17 +4,25 @@ import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
+import { useDispatch, useSelector } from 'react-redux';
+import { ascSort, descSort, getProduct, getProductOrder } from '../../../store/productSlice';
 
 export default function Settings() {
     const [sort, setSort] = React.useState('');
+    const dispatch = useDispatch();
+    const category = useSelector(state => state.product.currentCategory)
 
     const handleChange = (event) => {
         setSort(event.target.value);
     };
 
+    React.useEffect(() => {
+        sort === 'Alphabet' ? dispatch(ascSort()) : dispatch(descSort());
+    }, [sort])
+
     return (
         <Box display='flex'>
-            <Box  sx={{ minWidth: 120 }}>
+            <Box sx={{ minWidth: 120 }}>
                 <FormControl size='small' fullWidth>
                     <InputLabel id="demo-simple-select-label">SORT BY</InputLabel>
                     <Select

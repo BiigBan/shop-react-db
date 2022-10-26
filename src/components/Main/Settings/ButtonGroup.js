@@ -7,7 +7,6 @@ export default function ColorToggleButton() {
     const [alignment, setAlignment] = React.useState('Show all');
 
     const handleChange = (event, newAlignment) => {
-        console.log(newAlignment);
         setAlignment(newAlignment);
     };
     const theme = useTheme();

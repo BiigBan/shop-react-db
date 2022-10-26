@@ -16,9 +16,9 @@ export const getProduct = createAsyncThunk(
 
 export const getProductOrder = createAsyncThunk(
     'product/getProductOrder',
-    async function ({category, order}, {dispatch}) {
+    async function ({category}, {dispatch}) {
         try {
-            const {data} = await productAPI.orderProduct(category, order)
+            const {data} = await productAPI.orderProduct(category)
             return data;
         } catch (error) {
             console.log(error);
@@ -47,8 +47,23 @@ const productSlice = createSlice({
         currentCategory: '',
     },
     reducers: {
-        setProduct: (state, action) => {
-            state.products = action.payload.product
+        setCategory: (state, action) => {
+            state.currentCategory = action.payload.category;
+        },
+        ascSort: (state) => {
+            state.products = state.products.sort((a, b) => a.title.localeCompare(b.title))
+        },
+        descSort: (state) => {
+            state.products = state.products.sort((a, b) => b.title.localeCompare(a.title))
+        },
+        mostRated: (state) => {
+            state.products = state.products.sort((a,b) => b.rating.rate - a.rating.rate)
+        },
+        lowHigh: (state) => {
+            state.products = state.products.sort((a,b) => a.price - b.price)
+        },
+        highLow: (state) => {
+            state.products = state.products.sort((a,b) => b.price - a.price)
         }
     },
     extraReducers: {
@@ -75,6 +90,6 @@ const productSlice = createSlice({
     }
 })
 
-export const { setProduct } = productSlice.actions;
+export const { setCategory, ascSort, descSort, mostRated, lowHigh, highLow } = productSlice.actions;
 
 export default productSlice.reducer;
