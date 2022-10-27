@@ -1,87 +1,9 @@
-import { useTheme } from '@emotion/react';
-import { Error } from '@mui/icons-material';
+import React from 'react'
+import Loader from '../@loader/Loader';
 import { Button, Radio, TextField, Typography } from '@mui/material';
 import { Box } from '@mui/system';
-import axios from 'axios';
-import { ErrorMessage, useFormik } from 'formik';
-import { useEffect, useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { Link, useNavigate } from 'react-router-dom';
-import * as yup from 'yup';
-import Loader from '../components/@loader/Loader';
-import { checkExistUser, registerUser, setNullExistUser, setStatus } from '../store/userSlice';
 
-export default function Login() {
-    const [sex, setSex] = useState('Male');
-    const [created, setCreated] = useState(false);
-    const [email, setEmail] = useState('');
-    const [user, setUser] = useState('');
-    const [userValues, setUserValues] = useState({});
-    const dispatch = useDispatch();
-
-
-    const userStatus = useSelector(state => state.user.status)
-    const existUser = useSelector(state => state.user.existUser)
-    const navigate = useNavigate();
-
-    const validationSchema = yup.object({
-        username: yup
-            .string('Enter your name')
-            .required('Name is required'),
-        email: yup
-            .string('Enter your email')
-            .email('Enter a valid email')
-            .required('Email is required'),
-        password: yup
-            .string('Enter your password')
-            .min(8, 'Password should be of minimum 8 characters length')
-            .required('Password is required'),
-        image: yup
-            .string('Enter your Image')
-            .required('Image is required'),
-    });
-
-    const formik = useFormik({
-        initialValues: {
-            username: '',
-            email: '',
-            password: '',
-            sex: 'Male',
-            image: ''
-        },
-        validationSchema: validationSchema,
-        onSubmit: async (values) => {
-            await dispatch(checkExistUser(values.email));
-            setEmail(values.email)
-            setUserValues(values)
-            setUser('')
-            if (existUser) {
-                dispatch(setNullExistUser())
-            }
-        },
-    });
-
-    useEffect(() => {
-        if (userValues !== {}) {
-            if (!existUser) {
-                setCreated(true);
-                let res = { ...userValues, selectedGoods: [] }
-                dispatch(registerUser(res))
-                dispatch(setStatus('resolved'))
-                if (created && email.length > 0) {
-                    localStorage.setItem('shopEmail', email);
-                    navigate('/product')
-                }
-            } else {
-                setUser('User is exist. Please - write another email')
-                formik.values.email = '';
-            }
-        }
-    }, [userValues])
-
-    const theme = useTheme();
-
-
+export default function RegistrationForm({formik, theme,sex,setSex,user}) {
     return (
         <form style={{ width: '100%', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', marginTop: '150px' }} onSubmit={formik.handleSubmit}>
             <Box>
@@ -164,8 +86,7 @@ export default function Login() {
                 <Button sx={{ '&:hover': { background: `${theme.palette.secondary.light}` } }} color="primary" variant="contained" fullWidth type="submit">
                     Submit
                 </Button>
-                <Typography my='50px' textAlign='center'>Have account - <Link to='/login' style={{color: '#0384fc', textDecoration: 'none'}}>Login</Link></Typography>
             </Box>
         </form>
-    );
-};
+    )
+}

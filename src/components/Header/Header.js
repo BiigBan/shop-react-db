@@ -16,10 +16,10 @@ import { useTheme } from '@emotion/react';
 import SearchIcon from '@mui/icons-material/Search';
 import ClearIcon from '@mui/icons-material/Clear';
 import style from './Header.module.css'
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
-import { setUser } from '../../store/userSlice';
+import { logoutUser, setAuth, setUser } from '../../store/userSlice';
 
 const pages = ['Sign in', 'My cart'];
 const settings = ['Profile', 'Settings', 'Logout'];
@@ -47,6 +47,14 @@ const Header = () => {
     const handleCloseUserMenu = () => {
         setAnchorElUser(null);
     };
+
+    const selectSetting = (e) => {
+        if (e.target.innerHTML === 'Logout') {
+            dispatch(logoutUser())
+            dispatch(setAuth())
+            localStorage.setItem('shopEmail', '')
+        }
+    }
 
     const userInfo = useSelector(state => state.user.user);
     const isAuth = useSelector(state => state.isAuth);
@@ -76,11 +84,13 @@ const Header = () => {
                     >
                         <MenuIcon />
                     </IconButton>
-                    <IconButton sx={{ borderRadius: '10px' }}>
-                        <Box sx={{ maxWidth: '176px' }}>
-                            <img style={{ maxWidth: '100%' }} src={logo} alt='logo of web site' />
-                        </Box>
-                    </IconButton>
+                    <Link to='/product'>
+                        <IconButton sx={{ borderRadius: '10px' }}>
+                            <Box sx={{ maxWidth: '176px' }}>
+                                <img style={{ maxWidth: '100%' }} src={logo} alt='logo of web site' />
+                            </Box>
+                        </IconButton>
+                    </Link>
                     <Menu
                         id="menu-appbar"
                         anchorEl={anchorElNav}
@@ -109,9 +119,11 @@ const Header = () => {
                 {/*on Desktop */}
                 <Box sx={{ display: { xs: 'none', md: 'flex' }, flexGrow: 1 }}>
                     <Box sx={{ width: '176px', flexGrow: 1, display: 'flex' }}>
-                        <IconButton sx={{ borderRadius: '10px' }}>
-                            <img style={{ width: '176px' }} src={logo} alt='logo of web site' />
-                        </IconButton>
+                        <Link to='/product'>
+                            <IconButton sx={{ borderRadius: '10px' }}>
+                                <img style={{ width: '176px' }} src={logo} alt='logo of web site' />
+                            </IconButton>
+                        </Link>
                         <Box sx={{ ml: '50px', display: 'flex', alignSelf: 'center', alignItems: 'center', background: '#e3e3e3', height: '48px', borderRadius: '99px', px: '15px', maxWidth: '600px' }}>
                             <SearchIcon sx={{ fill: `${theme.palette.primary.contrastText}` }} />
                             <input value={search} onChange={(e) => setSearch(e.target.value)} className={style.input} type="text" />
@@ -121,25 +133,26 @@ const Header = () => {
                         </Box>
                     </Box>
                     <Box sx={{ display: 'flex', }}>
-                        {
-                            isAuth && <>
+                        {!isAuth && <>
+                            <Link to='login' style={{ textDecoration: 'none' }} >
                                 <Button
                                     onClick={handleCloseNavMenu}
                                     color='secondary'
-                                    sx={{ my: 2, display: 'block', mr: '21px', fontFamily: 'Quicksand' }}
+                                    sx={{ my: 2, display: 'block', mr: '21px', fontFamily: 'Quicksand', '&:hover': { background: `${theme.palette.secondary.light}` } }}
                                     variant='outlined'
                                 >
                                     Sign In
                                 </Button>
-                                <Button
-                                    onClick={handleCloseNavMenu}
-                                    color='primary'
-                                    sx={{ fontFamily: 'Quicksand', my: 2, mr: '21px', display: 'block', color: `${theme.palette.secondary.main}`, boxShadow: `1px 2px 3px ${theme.palette.secondary.main}` }}
-                                    variant='contained'
-                                >
-                                    My Cart
-                                </Button>
-                            </>
+                            </Link>
+                            <Button
+                                onClick={handleCloseNavMenu}
+                                color='primary'
+                                sx={{ fontFamily: 'Quicksand', my: 2, mr: '21px', display: 'block', color: `${theme.palette.secondary.main}`, boxShadow: `1px 2px 3px ${theme.palette.secondary.main}`, '&:hover': { background: `${theme.palette.secondary.light}` } }}
+                                variant='contained'
+                            >
+                                My Cart
+                            </Button>
+                        </>
                         }
                     </Box>
                 </Box>
@@ -168,7 +181,7 @@ const Header = () => {
                     >
                         {settings.map((setting) => (
                             <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                                <Typography textAlign="center">{setting}</Typography>
+                                <Typography onClick={selectSetting} textAlign="center">{setting}</Typography>
                             </MenuItem>
                         ))}
                     </Menu>

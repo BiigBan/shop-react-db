@@ -32,8 +32,19 @@ export const userAPI = {
     },
     setUser: (email) => {
         return instance.get(`users?q=${email}`).then(response => {
-            console.log(response);
             return response.data
         })
     },
+    login: (email, password) => {
+        return instance.get(`users?q=${email}`).then(response => {
+            if (response.data.length === 1) {
+                if (response.data[0].email === email && response.data[0].password === password) {
+                    return response
+                }
+            } else {
+                const message = 'Incorrect email or password'
+                return message
+            }
+        })
+    }
 }

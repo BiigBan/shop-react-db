@@ -9,6 +9,7 @@ import RoutesComponent from "./Routes/Routes";
 import Registration from "./pages/Registration";
 import { useState } from "react";
 import Loader from "./components/@loader/Loader";
+import Login from "./pages/Login";
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
                 <Route path=":category/:grid" element={<Main />} />
               </Route>
               <Route path="registration" element={<Registration />} />
+              <Route path="login" element={<Login />} />
             </Routes>
       </Container>
 

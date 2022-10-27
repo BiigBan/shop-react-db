@@ -5,7 +5,7 @@ import FilterListIcon from '@mui/icons-material/FilterList';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import { Box } from '@mui/system'
 import React, { useState } from 'react'
-import {useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 
 export default function Category() {
@@ -54,7 +54,7 @@ export default function Category() {
                 </ListSubheader>
             }
         >
-            <ListItemButton sx={{ '&:hover': { backgroundColor: `${theme.palette.secondary.light}` } }} onClick={handleClick}>
+            <ListItemButton sx={{ '&:hover': { backgroundColor: `${theme.palette.secondary.light}`, background: `${theme.palette.secondary.light}`, color: `${theme.palette.secondary.main}` } }} onClick={handleClick}>
                 <ListItemIcon>
                     {open ? <Box sx={{ transform: 'rotate(90deg)' }}><ArrowForwardIosIcon sx={{ width: '15px' }} color='secondary' /></Box> : <Box><ArrowForwardIosIcon sx={{ width: '15px' }} color='secondary' /></Box>}
                 </ListItemIcon>
@@ -75,7 +75,7 @@ export default function Category() {
                         <List component="div" disablePadding>
                             <ListItemButton sx={{ '&:hover': { backgroundColor: `${theme.palette.secondary.light}` }, justifyContent: 'center' }}>
                                 <Box>
-                                        <ListItemText onClick={selectCategory} primary="Phones" />
+                                    <ListItemText onClick={selectCategory} primary="Phones" />
                                 </Box>
                             </ListItemButton>
                             <ListItemButton sx={{ '&:hover': { backgroundColor: `${theme.palette.secondary.light}` }, justifyContent: 'center' }}>

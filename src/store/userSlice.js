@@ -20,7 +20,7 @@ export const checkExistUser = createAsyncThunk(
     async function (email, dispatch) {
         try {
             const result = await userAPI.exist(email)
-            if(result === 'User is exist'){
+            if (result === 'User is exist') {
                 return 'User is exist'
             }
             return 'User doesn`t exist'
@@ -42,29 +42,44 @@ export const setUser = createAsyncThunk(
     }
 )
 
+export const loginUser = createAsyncThunk(
+    'user/login',
+    async function ({ email, password }, dispatch) {
+        try {
+            const res = await userAPI.login(email, password);
+            if (typeof res === 'string') {
+                return res
+            }
+            return res.data[0];
+        } catch (error) {
+            return error
+        }
+    }
+)
+
 const userSlice = createSlice({
     name: 'user',
     initialState: {
         user: {
             id: 1,
-            username: "Denis",
-            email: "test1@gmail.com",
-            password: "qwerty123",
+            username: "User",
+            email: "",
+            password: "",
             sex: "male",
             image: "https://www.clipartmax.com/png/middle/319-3191274_male-avatar-admin-profile.png",
             selectedGoods: [
-                {
-                    "id": 1,
-                    "title": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
-                    "price": 109.95,
-                    "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
-                    "category": "man's clothing",
-                    "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
-                    "rating": {
-                        "rate": 3.9,
-                        "count": 120
-                    }
-                }
+                // {
+                //     "id": 1,
+                //     "title": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+                //     "price": 109.95,
+                //     "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+                //     "category": "man's clothing",
+                //     "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+                //     "rating": {
+                //         "rate": 3.9,
+                //         "count": 120
+                //     }
+                // }
             ]
         },
         status: null,
@@ -83,6 +98,20 @@ const userSlice = createSlice({
         setStatus: (state, action) => {
             state.status = action.payload;
         },
+        logoutUser: (state, action) => {
+            state.user = {
+                id: 1,
+                username: "User",
+                email: "",
+                password: "",
+                sex: "male",
+                image: "https://www.clipartmax.com/png/middle/319-3191274_male-avatar-admin-profile.png",
+                selectedGoods: []
+            }
+        },
+        setAuth: (state, action) => {
+            state.isAuth = false;
+        }
     },
     extraReducers: {
         [registerUser.pending]: (state, action) => {
@@ -101,7 +130,7 @@ const userSlice = createSlice({
             state.status = 'pending';
         },
         [checkExistUser.fulfilled]: (state, action) => {
-            if(action.payload === 'User is exist') {
+            if (action.payload === 'User is exist') {
                 state.existUser = true;
             } else {
                 state.existUser = false;
@@ -126,9 +155,26 @@ const userSlice = createSlice({
             state.status = 'error';
             state.error = action.payload;
         },
+        [loginUser.pending]: (state, action) => {
+            state.status = 'pending';
+        },
+        [loginUser.fulfilled]: (state, action) => {
+            if (typeof action.payload === 'string') {
+                state.error = action.payload
+            } else {
+                state.user = action.payload;
+                state.isAuth = true;
+                state.status = 'resolved';
+                state.error = '';
+            }
+        },
+        [loginUser.rejected]: (state, action) => {
+            state.status = 'error';
+            state.error = action.payload;
+        },
     }
 })
 
-export const { setGrid, setNullExistUser, setStatus } = userSlice.actions;
+export const { setGrid, setNullExistUser, setStatus, logoutUser, setAuth } = userSlice.actions;
 
 export default userSlice.reducer;
