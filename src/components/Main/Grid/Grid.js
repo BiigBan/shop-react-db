@@ -2,9 +2,11 @@ import { Grid } from '@mui/material'
 import { Box } from '@mui/system';
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
+import { useSelector } from 'react-redux';
+import Loader from '../../@loader/Loader';
 import Item from './Item/Item';
 
-export default function GridComponent({products}) {
+export default function GridComponent({ products }) {
 
     return (
         <Grid container spacing={2}>

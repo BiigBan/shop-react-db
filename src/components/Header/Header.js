@@ -6,7 +6,6 @@ import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
-import Container from '@mui/material/Container';
 import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
@@ -18,9 +17,12 @@ import SearchIcon from '@mui/icons-material/Search';
 import ClearIcon from '@mui/icons-material/Clear';
 import style from './Header.module.css'
 import { Link } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
+import { useEffect } from 'react';
+import { setUser } from '../../store/userSlice';
 
 const pages = ['Sign in', 'My cart'];
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
+const settings = ['Profile', 'Settings', 'Logout'];
 
 const Header = () => {
 
@@ -45,6 +47,19 @@ const Header = () => {
     const handleCloseUserMenu = () => {
         setAnchorElUser(null);
     };
+
+    const userInfo = useSelector(state => state.user.user);
+    const isAuth = useSelector(state => state.isAuth);
+    const dispatch = useDispatch();
+
+    useEffect(() => {
+        if (!isAuth) {
+            const email = localStorage.getItem('shopEmail');
+            if (email) {
+                dispatch(setUser(email))
+            }
+        }
+    }, [])
 
     return (
         <AppBar sx={{ boxShadow: 'none' }} position="static">
@@ -106,29 +121,33 @@ const Header = () => {
                         </Box>
                     </Box>
                     <Box sx={{ display: 'flex', }}>
-                        <Button
-                            onClick={handleCloseNavMenu}
-                            color='secondary'
-                            sx={{ my: 2, display: 'block', mr: '21px', fontFamily: 'Quicksand' }}
-                            variant='outlined'
-                        >
-                            Sign In
-                        </Button>
-                        <Button
-                            onClick={handleCloseNavMenu}
-                            color='primary'
-                            sx={{ fontFamily: 'Quicksand', my: 2, mr: '21px', display: 'block', color: `${theme.palette.secondary.main}`, boxShadow: `1px 2px 3px ${theme.palette.secondary.main}` }}
-                            variant='contained'
-                        >
-                            My Cart
-                        </Button>
+                        {
+                            isAuth && <>
+                                <Button
+                                    onClick={handleCloseNavMenu}
+                                    color='secondary'
+                                    sx={{ my: 2, display: 'block', mr: '21px', fontFamily: 'Quicksand' }}
+                                    variant='outlined'
+                                >
+                                    Sign In
+                                </Button>
+                                <Button
+                                    onClick={handleCloseNavMenu}
+                                    color='primary'
+                                    sx={{ fontFamily: 'Quicksand', my: 2, mr: '21px', display: 'block', color: `${theme.palette.secondary.main}`, boxShadow: `1px 2px 3px ${theme.palette.secondary.main}` }}
+                                    variant='contained'
+                                >
+                                    My Cart
+                                </Button>
+                            </>
+                        }
                     </Box>
                 </Box>
 
                 <Box sx={{ flexGrow: 0 }}>
                     <Tooltip title="Open settings">
                         <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                            <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
+                            <Avatar alt={userInfo.username} src={userInfo.image} />
                         </IconButton>
                     </Tooltip>
                     <Menu

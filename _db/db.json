@@ -1,664 +1,677 @@
 {
-    "users": [
+  "users": [
+    {
+      "id": 1,
+      "username": "Denis",
+      "email": "test1@gmail.com",
+      "password": "qwerty123",
+      "sex": "male",
+      "image": "https://www.clipartmax.com/png/middle/319-3191274_male-avatar-admin-profile.png",
+      "selectedGoods": [
         {
-            "id": 1,
-            "username": "Denis",
-            "email": "test1@gmail.com",
-            "password": "qwerty123",
-            "sex": "male",
-            "image": "https://www.clipartmax.com/png/middle/319-3191274_male-avatar-admin-profile.png",
-            "selectedGoods": [
-                {
-                    "id": 1,
-                    "title": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
-                    "price": 109.95,
-                    "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
-                    "category": "man's clothing",
-                    "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
-                    "rating": {
-                        "rate": 3.9,
-                        "count": 120
-                    }
-                }
-            ]
+          "id": 1,
+          "title": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+          "price": 109.95,
+          "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+          "category": "man's clothing",
+          "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+          "rating": {
+            "rate": 3.9,
+            "count": 120
+          }
         }
-    ],
-    "products": [
-        {
-            "id": 1,
-            "title": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
-            "price": 109.95,
-            "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
-            "category": "man's clothing",
-            "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
-            "rating": {
-                "rate": 3.9,
-                "count": 120
-            }
-        },
-        {
-            "id": 2,
-            "title": "Mens Casual Premium Slim Fit T-Shirts ",
-            "price": 22.3,
-            "description": "Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight & soft fabric for breathable and comfortable wearing. And Solid stitched shirts with round neck made for durability and a great fit for casual fashion wear and diehard baseball fans. The Henley style round neckline includes a three-button placket.",
-            "category": "man's clothing",
-            "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
-            "rating": {
-                "rate": 4.1,
-                "count": 259
-            }
-        },
-        {
-            "id": 3,
-            "title": "Mens Cotton Jacket",
-            "price": 55.99,
-            "description": "great outerwear jackets for Spring/Autumn/Winter, suitable for many occasions, such as working, hiking, camping, mountain/rock climbing, cycling, traveling or other outdoors. Good gift choice for you or your family member. A warm hearted love to Father, husband or son in this thanksgiving or Christmas Day.",
-            "category": "man's clothing",
-            "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
-            "rating": {
-                "rate": 4.7,
-                "count": 500
-            }
-        },
-        {
-            "id": 4,
-            "title": "Mens Casual Slim Fit",
-            "price": 15.99,
-            "description": "The color could be slightly different between on the screen and in practice. / Please note that body builds vary by person, therefore, detailed size information should be reviewed below on the product description.",
-            "category": "man's clothing",
-            "image": "https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg",
-            "rating": {
-                "rate": 2.1,
-                "count": 430
-            }
-        },
-        {
-            "id": 5,
-            "title": "John Hardy Women's Legends Naga Gold & Silver Dragon Station Chain Bracelet",
-            "price": 695,
-            "description": "From our Legends Collection, the Naga was inspired by the mythical water dragon that protects the ocean's pearl. Wear facing inward to be bestowed with love and abundance, or outward for protection.",
-            "category": "jewelery",
-            "image": "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg",
-            "rating": {
-                "rate": 4.6,
-                "count": 400
-            }
-        },
-        {
-            "id": 6,
-            "title": "Solid Gold Petite Micropave ",
-            "price": 168,
-            "description": "Satisfaction Guaranteed. Return or exchange any order within 30 days.Designed and sold by Hafeez Center in the United States. Satisfaction Guaranteed. Return or exchange any order within 30 days.",
-            "category": "jewelery",
-            "image": "https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg",
-            "rating": {
-                "rate": 3.9,
-                "count": 70
-            }
-        },
-        {
-            "id": 7,
-            "title": "White Gold Plated Princess",
-            "price": 9.99,
-            "description": "Classic Created Wedding Engagement Solitaire Diamond Promise Ring for Her. Gifts to spoil your love more for Engagement, Wedding, Anniversary, Valentine's Day...",
-            "category": "jewelery",
-            "image": "https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_QL65_ML3_.jpg",
-            "rating": {
-                "rate": 3,
-                "count": 400
-            }
-        },
-        {
-            "id": 8,
-            "title": "Pierced Owl Rose Gold Plated Stainless Steel Double",
-            "price": 10.99,
-            "description": "Rose Gold Plated Double Flared Tunnel Plug Earrings. Made of 316L Stainless Steel",
-            "category": "jewelery",
-            "image": "https://fakestoreapi.com/img/51UDEzMJVpL._AC_UL640_QL65_ML3_.jpg",
-            "rating": {
-                "rate": 1.9,
-                "count": 100
-            }
-        },
-        {
-            "id": 9,
-            "title": "WD 2TB Elements Portable External Hard Drive - USB 3.0 ",
-            "price": 64,
-            "description": "USB 3.0 and USB 2.0 Compatibility Fast data transfers Improve PC Performance High Capacity; Compatibility Formatted NTFS for Windows 10, Windows 8.1, Windows 7; Reformatting may be required for other operating systems; Compatibility may vary depending on user’s hardware configuration and operating system",
-            "category": "electronics",
-            "image": "https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg",
-            "rating": {
-                "rate": 3.3,
-                "count": 203
-            }
-        },
-        {
-            "id": 10,
-            "title": "SanDisk SSD PLUS 1TB Internal SSD - SATA III 6 Gb/s",
-            "price": 109,
-            "description": "Easy upgrade for faster boot up, shutdown, application load and response (As compared to 5400 RPM SATA 2.5” hard drive; Based on published specifications and internal benchmarking tests using PCMark vantage scores) Boosts burst write performance, making it ideal for typical PC workloads The perfect balance of performance and reliability Read/write speeds of up to 535MB/s/450MB/s (Based on internal testing; Performance may vary depending upon drive capacity, host device, OS and application.)",
-            "category": "electronics",
-            "image": "https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg",
-            "rating": {
-                "rate": 2.9,
-                "count": 470
-            }
-        },
-        {
-            "id": 11,
-            "title": "Silicon Power 256GB SSD 3D NAND A55 SLC Cache Performance Boost SATA III 2.5",
-            "price": 109,
-            "description": "3D NAND flash are applied to deliver high transfer speeds Remarkable transfer speeds that enable faster bootup and improved overall system performance. The advanced SLC Cache Technology allows performance boost and longer lifespan 7mm slim design suitable for Ultrabooks and Ultra-slim notebooks. Supports TRIM command, Garbage Collection technology, RAID, and ECC (Error Checking & Correction) to provide the optimized performance and enhanced reliability.",
-            "category": "electronics",
-            "image": "https://fakestoreapi.com/img/71kWymZ+c+L._AC_SX679_.jpg",
-            "rating": {
-                "rate": 4.8,
-                "count": 319
-            }
-        },
-        {
-            "id": 12,
-            "title": "WD 4TB Gaming Drive Works with Playstation 4 Portable External Hard Drive",
-            "price": 114,
-            "description": "Expand your PS4 gaming experience, Play anywhere Fast and easy, setup Sleek design with high capacity, 3-year manufacturer's limited warranty",
-            "category": "electronics",
-            "image": "https://fakestoreapi.com/img/61mtL65D4cL._AC_SX679_.jpg",
-            "rating": {
-                "rate": 4.8,
-                "count": 400
-            }
-        },
-        {
-            "id": 13,
-            "title": "Acer SB220Q bi 21.5 inches Full HD (1920 x 1080) IPS Ultra-Thin",
-            "price": 599,
-            "description": "21. 5 inches Full HD (1920 x 1080) widescreen IPS display And Radeon free Sync technology. No compatibility for VESA Mount Refresh Rate: 75Hz - Using HDMI port Zero-frame design | ultra-thin | 4ms response time | IPS panel Aspect ratio - 16: 9. Color Supported - 16. 7 million colors. Brightness - 250 nit Tilt angle -5 degree to 15 degree. Horizontal viewing angle-178 degree. Vertical viewing angle-178 degree 75 hertz",
-            "category": "electronics",
-            "image": "https://fakestoreapi.com/img/81QpkIctqPL._AC_SX679_.jpg",
-            "rating": {
-                "rate": 2.9,
-                "count": 250
-            }
-        },
-        {
-            "id": 14,
-            "title": "Samsung 49-Inch CHG90 144Hz Curved Gaming Monitor (LC49HG90DMNXZA) – Super Ultrawide Screen QLED ",
-            "price": 999.99,
-            "description": "49 INCH SUPER ULTRAWIDE 32:9 CURVED GAMING MONITOR with dual 27 inch screen side by side QUANTUM DOT (QLED) TECHNOLOGY, HDR support and factory calibration provides stunningly realistic and accurate color and contrast 144HZ HIGH REFRESH RATE and 1ms ultra fast response time work to eliminate motion blur, ghosting, and reduce input lag",
-            "category": "electronics",
-            "image": "https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg",
-            "rating": {
-                "rate": 2.2,
-                "count": 140
-            }
-        },
-        {
-            "id": 15,
-            "title": "BIYLACLESEN Women's 3-in-1 Snowboard Jacket Winter Coats",
-            "price": 56.99,
-            "description": "Note:The Jackets is US standard size, Please choose size as your usual wear Material: 100% Polyester; Detachable Liner Fabric: Warm Fleece. Detachable Functional Liner: Skin Friendly, Lightweigt and Warm.Stand Collar Liner jacket, keep you warm in cold weather. Zippered Pockets: 2 Zippered Hand Pockets, 2 Zippered Pockets on Chest (enough to keep cards or keys)and 1 Hidden Pocket Inside.Zippered Hand Pockets and Hidden Pocket keep your things secure. Humanized Design: Adjustable and Detachable Hood and Adjustable cuff to prevent the wind and water,for a comfortable fit. 3 in 1 Detachable Design provide more convenience, you can separate the coat and inner as needed, or wear it together. It is suitable for different season and help you adapt to different climates",
-            "category": "women's clothing",
-            "image": "https://fakestoreapi.com/img/51Y5NI-I5jL._AC_UX679_.jpg",
-            "rating": {
-                "rate": 2.6,
-                "count": 235
-            }
-        },
-        {
-            "id": 16,
-            "title": "Lock and Love Women's Removable Hooded Faux Leather Moto Biker Jacket",
-            "price": 29.95,
-            "description": "100% POLYURETHANE(shell) 100% POLYESTER(lining) 75% POLYESTER 25% COTTON (SWEATER), Faux leather material for style and comfort / 2 pockets of front, 2-For-One Hooded denim style faux leather jacket, Button detail on waist / Detail stitching at sides, HAND WASH ONLY / DO NOT BLEACH / LINE DRY / DO NOT IRON",
-            "category": "women's clothing",
-            "image": "https://fakestoreapi.com/img/81XH0e8fefL._AC_UY879_.jpg",
-            "rating": {
-                "rate": 2.9,
-                "count": 340
-            }
-        },
-        {
-            "id": 17,
-            "title": "Rain Jacket Women Windbreaker Striped Climbing Raincoats",
-            "price": 39.99,
-            "description": "Lightweight perfet for trip or casual wear---Long sleeve with hooded, adjustable drawstring waist design. Button and zipper front closure raincoat, fully stripes Lined and The Raincoat has 2 side pockets are a good size to hold all kinds of things, it covers the hips, and the hood is generous but doesn't overdo it.Attached Cotton Lined Hood with Adjustable Drawstrings give it a real styled look.",
-            "category": "women's clothing",
-            "image": "https://fakestoreapi.com/img/71HblAHs5xL._AC_UY879_-2.jpg",
-            "rating": {
-                "rate": 3.8,
-                "count": 679
-            }
-        },
-        {
-            "id": 18,
-            "title": "MBJ Women's Solid Short Sleeve Boat Neck V ",
-            "price": 9.85,
-            "description": "95% RAYON 5% SPANDEX, Made in USA or Imported, Do Not Bleach, Lightweight fabric with great stretch for comfort, Ribbed on sleeves and neckline / Double stitching on bottom hem",
-            "category": "women's clothing",
-            "image": "https://fakestoreapi.com/img/71z3kpMAYsL._AC_UY879_.jpg",
-            "rating": {
-                "rate": 4.7,
-                "count": 130
-            }
-        },
-        {
-            "id": 19,
-            "title": "Opna Women's Short Sleeve Moisture",
-            "price": 7.95,
-            "description": "100% Polyester, Machine wash, 100% cationic polyester interlock, Machine Wash & Pre Shrunk for a Great Fit, Lightweight, roomy and highly breathable with moisture wicking fabric which helps to keep moisture away, Soft Lightweight Fabric with comfortable V-neck collar and a slimmer fit, delivers a sleek, more feminine silhouette and Added Comfort",
-            "category": "women's clothing",
-            "image": "https://fakestoreapi.com/img/51eg55uWmdL._AC_UX679_.jpg",
-            "rating": {
-                "rate": 4.5,
-                "count": 146
-            }
-        },
-        {
-            "id": 20,
-            "title": "DANVOUY Womens T Shirt Casual Cotton Short",
-            "price": 12.99,
-            "description": "95%Cotton,5%Spandex, Features: Casual, Short Sleeve, Letter Print,V-Neck,Fashion Tees, The fabric is soft and has some stretch., Occasion: Casual/Office/Beach/School/Home/Street. Season: Spring,Summer,Autumn,Winter.",
-            "category": "women's clothing",
-            "image": "https://fakestoreapi.com/img/61pHAEJ4NML._AC_UX679_.jpg",
-            "rating": {
-                "rate": 3.6,
-                "count": 145
-            }
-        },
-        {
-            "id": 21,
-            "title": "Samsung Galaxy S22 8/128GB Phantom Black",
-            "price": 900,
-            "description": "It’s our brightest innovation yet. The sensor pulls in more light, the Super Clear Glass dials downs lens flare, and fast-acting AI delivers near-instant intelligent processing",
-            "category": "phones",
-            "image": "https://content.rozetka.com.ua/goods/images/big/253279564.jpg",
-            "rating": {
-                "rate": 4.1,
-                "count": 23
-            }
-        },
-        {
-            "id": 22,
-            "title": "Apple iPhone 14 Pro 128GB Space Black",
-            "price": 1489,
-            "description": "AppleCare+ product must be purchased with an applicable Apple device. Purchase of AppleCare+ is not required to purchase Apple Device.",
-            "category": "phones",
-            "image": "https://content.rozetka.com.ua/goods/images/big/284920756.jpg",
-            "rating": {
-                "rate": 4.3,
-                "count": 25
-            }
-        },
-        {
-            "id": 23,
-            "title": "Xiaomi Redmi Note 10 Pro 6/128GB Onyx Gray",
-            "price": 221,
-            "description": "Challenge your boundaries with108 MP Distinctive, super-sharp and mind-blowing imaging system: With the combination of three high-end technologies, the camera is designed for night photography",
-            "category": "phones",
-            "image": "https://content1.rozetka.com.ua/goods/images/big/163432102.jpg",
-            "rating": {
-                "rate": 4.1,
-                "count": 22
-            }
-        },
-        {
-            "id": 24,
-            "title": "Infinix Note 11 (X663B) 6/128Gb NFC Celestial Snow",
-            "price": 186,
-            "description": "08 MP + 50x Super Zoom. Capture the moment in any light with Ultra Pixel technology and record 8K video—or take incredibly sharp photos from afar",
-            "category": "phones",
-            "image": "https://content.rozetka.com.ua/goods/images/big/280969020.jpg",
-            "rating": {
-                "rate": 4.9,
-                "count": 21
-            }
-        },
-        {
-            "id": 25,
-            "title": "Samsung Galaxy A33 5G 6/128GB Light Blue",
-            "price": 167,
-            "description": "The power of next-generation 5G data speeds brings a whole new experience to your mobile — from super smooth gaming and streaming, to ultra-fast sharing and downloading",
-            "category": "phones",
-            "image": "https://content2.rozetka.com.ua/goods/images/big/263964999.jpg",
-            "rating": {
-                "rate": 4,
-                "count": 28
-            }
-        },
-        {
-            "id": 26,
-            "title": "Samsung Galaxy S22 Ultra 8/128GB Phantom White",
-            "price": 976,
-            "description": "Our fastest, most powerful chip ever. That means, a faster CPU and GPU compared to Galaxy S21 Ultra. It’s an epic leap for smartphone technology",
-            "category": "phones",
-            "image": "https://content.rozetka.com.ua/goods/images/big/253282006.jpg",
-            "rating": {
-                "rate": 4.6,
-                "count": 21
-            }
-        },
-        {
-            "id": 27,
-            "title": "Windows 10 Home & Pro 64 Bit Operating System Recovery",
-            "price": 35,
-            "description": "Full Instructions Available from our Website with Live Help Desk Support Also Available... This recovery media can fix boot sector errors, missing files, broken DLL's broken installs, in fact it can fix almost any operating system problem and if required it can also initiate a complete reinstall. PLEASE CONTACT US USING OUR LIVE HELPDESK IF YOU HAVE ANY PROBLEMS AT ALL, WE WANT TO HELP YOU",
-            "category": "applications",
-            "image": "https://m.media-amazon.com/images/I/61p70RrFePL._AC_SL1024_.jpg",
-            "rating": {
-                "rate": 3.6,
-                "count": 56
-            }
-        },
-        {
-            "id": 28,
-            "title": "Laplink PCmover Ultimate 11",
-            "price": 40,
-            "description": "Moves your Applications, Files and Settings from an Old PC to a New PC | Includes Optional Ethernet Cable | 1 Use",
-            "category": "applications",
-            "image": "https://m.media-amazon.com/images/I/71X6xcBBRpL._AC_SL1500_.jpg",
-            "rating": {
-                "rate": 3.9,
-                "count": 45
-            }
-        },
-        {
-            "id": 29,
-            "title": "Driver Genius 22",
-            "price": 60,
-            "description": "Driver Genius Platinum helps you manage your drivers and boost your PC! If you regularly reinstall your system, you know how difficult and time-consuming it can often be to find the drivers you need for your PC. Driver Genius allows you to save all your drivers on your PC and restore them once the system has been reinstalled",
-            "category": "applications",
-            "image": "https://m.media-amazon.com/images/I/710LbhLhsEL._AC_SL1500_.jpg",
-            "rating": {
-                "rate": 3.9,
-                "count": 23
-            }
-        },
-        {
-            "id": 30,
-            "title": "Kaspersky Internet Security 2021",
-            "price": 45,
-            "description": "Kaspersky Internet Security helps you stay safe from cybercrime, viruses, Internet attacks and more - so you can do more with your computers, tablets and phones. Your PC, Mac, iOS and Android devices let you get more out of your digital life - so we'll help you protect them all",
-            "category": "applications",
-            "image": "https://m.media-amazon.com/images/I/615+4f3d3ZL._AC_SL1500_.jpg",
-            "rating": {
-                "rate": 3.8,
-                "count": 35
-            }
-        },
-        {
-            "id": 31,
-            "title": "Smart Watch Wireless Waterproof Sports Tracker Call Phone Watch with Black Leather Band",
-            "price": 120,
-            "description": "Smart watch made of durable material is a practical and useful tool for sports or phone calls.With IP67 waterproof,it can company with you anytime even when rainy or swimming.It is widely compatible with Android and IOS,and can be a supplement tool for your phone.With various stylish dials,the smart phone can be a great accessory to match your dressing",
-            "category": "smart watches",
-            "image": "https://m.media-amazon.com/images/I/61QYbxl6s5L._SL1053_.jpg",
-            "rating": {
-                "rate": 4.1,
-                "count": 67
-            }
-        },
-        {
-            "id": 32,
-            "title": "Liummrcy Smart Watch Fitness Watch Band",
-            "price": 150,
-            "description": "Smart watch's main functions: display the current time, display exercise steps, exercise more efficient, display current heart rate, accurate real time measurement, display steps and mileage, display exercise calories, and display current power. Bluetooth smart reminder and alarm clock reminder. Call reminder, vibration reminder, don't miss important calls",
-            "category": "smart watches",
-            "image": "https://m.media-amazon.com/images/I/51oTRnDUlKL._AC_SL1001_.jpg",
-            "rating": {
-                "rate": 1,
-                "count": 89
-            }
-        },
-        {
-            "id": 33,
-            "title": "Samsung Galaxy Watch4 Smart Watch",
-            "price": 200,
-            "description": "Compete with friends and family - in a fun competition through a live message board. Challenges come with commemorative badges and a point system to make exercise fun, motivating and socially rewarding",
-            "category": "smart watches",
-            "image": "https://m.media-amazon.com/images/I/61t-PpumXyL._AC_SL1500_.jpg",
-            "rating": {
-                "rate": 5,
-                "count": 42
-            }
-        },
-        {
-            "id": 34,
-            "title": "Apple Watch Series 7",
-            "price": 250,
-            "description": "For your own benefit and protection it is important that you read the AppleCare+ Terms and Conditions, the Insurance Product Information Document and the Terms of Business carefully before purchase",
-            "category": "smart watches",
-            "image": "https://m.media-amazon.com/images/I/51Aq-9XI+KL._AC_SL1500_.jpg",
-            "rating": {
-                "rate": 4.9,
-                "count": 21
-            }
-        },
-        {
-            "id": 35,
-            "title": "ASUS Vivobook 15 X1500EA 15.6\" Full HD Laptop (Intel i3-1115G4, 8GB RAM, 256GB SSD, Windows 11)",
-            "price": 430,
-            "description": "Powered by Intel's Core i3-1115G4 Processor,Screen: 15.6-Inch LED Backlit FHD (1920 x 1080) 16:9,System Memory: 8GB RAM,Storage: 256GB PCIe SSD,OS: Microsoft Windows 11",
-            "category": "laptops",
-            "image": "https://m.media-amazon.com/images/I/61mEoDhgBoL._AC_SL1000_.jpg",
-            "rating": {
-                "rate": 4.9,
-                "count": 21
-            }
-        },
-        {
-            "id": 36,
-            "title": "Lenovo IdeaPad 5i 15 Inch Full HD Laptop (Intel Core i5, 8GB RAM, 256GB SSD Storage, Intel Iris Xe Graphics, Windows 10S) – Platinum Grey Metal",
-            "price": 700,
-            "description": "The smart choice: The last thing you need is a hacker peeking into your life through your webcam, so the IdeaPad 5i with a physical privacy shutter blocks the camera when you don't want to be seen. Using a Post-it note is so 'ok boomer'",
-            "category": "laptops",
-            "image": "https://m.media-amazon.com/images/I/71Y2NpxZEiS._AC_SL1500_.jpg",
-            "rating": {
-                "rate": 4.3,
-                "count": 28
-            }
-        },
-        {
-            "id": 37,
-            "title": "ASUS Vivobook 15 X515JA 15.6\" Full HD Laptop (Intel Core i5, 8GB RAM, 512GB SSD, Windows 11), Silver",
-            "price": 650,
-            "description": "Whether for work or play, ASUS X515 is the entry-level laptop that delivers powerful performance and immersive visuals. Its NanoEdge display boasts wide 178° viewing angles and a matte anti-glare coating for a truly engaging experience. Inside, it's powered by up to an Intel Core i7 processor with 16 GB 2400 MHz RAM, and features NVIDIA GeForce MX330. A dual-storage design with up to a 1 TB PCIe SSD and a 1 TB HDD gives you the perfect combination of large storage capacity and fast data read / write speeds. There's also Intel Optane memory support1 to help speed things up even more",
-            "category": "laptops",
-            "image": "https://m.media-amazon.com/images/I/613q5FiugaL._AC_SL1000_.jpg",
-            "rating": {
-                "rate": 4.1,
-                "count": 40
-            }
-        },
-        {
-            "id": 38,
-            "title": "4K Mini PC, Desktop Computer, Server",
-            "price": 730,
-            "description": "Intel 6 Cores I7 8750H, Windows 11 Pro or Linux Ubuntu, HUNSN BM21b, AC WiFi, BT, DP, HDMI, 6 x USB3.0, Type-C, LAN, Smart Fan, 64G RAM, 512G M.2 2280 NVME SSD",
-            "category": "computers",
-            "image": "https://m.media-amazon.com/images/I/61IbLG1SGcL._AC_SL1500_.jpg",
-            "rating": {
-                "rate": 3.7,
-                "count": 47
-            }
-        },
-        {
-            "id": 39,
-            "title": "Mini PC Mini Desktop Computer",
-            "price": 640,
-            "description": "Windows 10 8GB RAM 256GB SSD Intel Celeron J4205 Support 2.4G 5G WiFi Gigabit Ethernet HDMI USB 3.0 BT4.0 Support Auto Power On",
-            "category": "computers",
-            "image": "https://m.media-amazon.com/images/I/61XrrvZmseL._AC_SL1500_.jpg",
-            "rating": {
-                "rate": 4.2,
-                "count": 43
-            }
-        },
-        {
-            "id": 40,
-            "title": "Dell OptiPlex 3020 SFF",
-            "price": 460,
-            "description": "4th Gen Core i5-4590 8GB 240GB SSD DVDRW Windows 10 Professional 64-Bit Desktop PC Computer (Renewed)",
-            "category": "computers",
-            "image": "https://m.media-amazon.com/images/I/81CLPRbCZ-L._AC_SL1500_.jpg",
-            "rating": {
-                "rate": 3.4,
-                "count": 24
-            }
-        },
-        {
-            "id": 41,
-            "title": "Lenovo Tab P11 Plus 11 Inch 2K Tablet",
-            "price": 180,
-            "description": "MediaTek Helio G90T,Octa-Core 2.0GHz, 6GB RAM, 128GB Storage, Android 11, multi-touch screen",
-            "category": "tablets",
-            "image": "https://m.media-amazon.com/images/I/61j+7cf24bL._AC_SL1500_.jpg",
-            "rating": {
-                "rate": 3.8,
-                "count": 37
-            }
-        },
-        {
-            "id": 42,
-            "title": "Lenovo Tab M10 10.1 Inch HD Tablet",
-            "price": 140,
-            "description": "Your family tablet: A powerful tablet that suits all your family’s needs with dedicated user profiles, parental controls and a Kids Mode for your peace of mind",
-            "category": "tablets",
-            "image": "https://m.media-amazon.com/images/I/71FARLZ939L._AC_SL1500_.jpg",
-            "rating": {
-                "rate": 3.1,
-                "count": 69
-            }
-        },
-        {
-            "id": 43,
-            "title": "Samsung Galaxy Tab S8 11 Inch 256GB",
-            "price": 210,
-            "description": "Built to take fun on the go. This 11” LCD screen has a ton to offer. From 5G to a huge battery, and a 12MP Ultra-Wide Front Camera. And of course, the S Pen is included",
-            "category": "tablets",
-            "image": "https://m.media-amazon.com/images/I/71p-fDFOZ6L._AC_SL1500_.jpg",
-            "rating": {
-                "rate": 4.2,
-                "count": 39
-            }
-        },
-        {
-            "id": 44,
-            "title": "Samsung Galaxy Tab S8 Ultra 14.6 Inch 128GB Wi-Fi Android Tablet Graphite",
-            "price": 765,
-            "description": "More than just space. The largest Samsung Galaxy Tab S is designed so you can create like a pro. Shoot with our first ultra wide front camera in a tablet and edit on the largest screen in the Samsung Galaxy Tab S.",
-            "category": "tablets",
-            "image": "https://m.media-amazon.com/images/I/81kcWhUr8KL._AC_SL1500_.jpg",
-            "rating": {
-                "rate": 4.6,
-                "count": 90
-            }
-        },
-        {
-            "id": 45,
-            "title": "Baby Boys Donald Duck Pyjama Set Long Sleeve Pjs Nightwear",
-            "price": 7,
-            "description": "Baby Boys Donald Duck Pyjama Set Long Sleeve Pjs Nightwear Size 6 to 24 months,Lovely Long Sleeved Top With Elasticated Bottoms,100% Cotton",
-            "category": "baby's clothing",
-            "image": "https://m.media-amazon.com/images/I/71sNEARzQ-L._AC_UY606_.jpg",
-            "rating": {
-                "rate": 3.4,
-                "count": 20
-            }
-        },
-        {
-            "id": 46,
-            "title": "Purple Amethyst Grade A Plain Round Beads 12mm Strand of 30+ Pieces",
-            "price": 25,
-            "description": "Amethyst is a variety of Quartz coloured by traces of Manganese, Titanium and Iron. Amethyst is a powerful and protective stone. The finest coloured specimens of Amethyst are found in Brazil and the Urals. It is said to guard against psychic attack, transmitting the energy into love and protecting the wearer from all types of harm. Medieval European soldiers wore Amethyst amulets as protection in battle and it is considered to be a strong antidote against drunkenness. Amethyst varies in colour with regular Amethyst usually being a deep grape colour",
-            "category": "beads",
-            "image": "https://m.media-amazon.com/images/I/41NUSHTaXaL._AC_.jpg",
-            "rating": {
-                "rate": 4.2,
-                "count": 12
-            }
-        },
-        {
-            "id": 47,
-            "title": "Efco 1400829 10 mm 53-Piece Wooden Beads Hole, Red",
-            "price": 22,
-            "description": "Make you own jewellery with these sturdy wooden beads. There are lots of colours and sizes available. Mix and match or buy a bag of assorted colours or sizes",
-            "category": "beads",
-            "image": "https://m.media-amazon.com/images/I/61NESTIL3bL._AC_SL1000_.jpg",
-            "rating": {
-                "rate": 4.2,
-                "count": 17
-            }
-        },
-        {
-            "id": 48,
-            "title": "Multicolour Amazonite Grade A Plain Round Beads 6mm Strand of 60+ Pieces",
-            "price": 8,
-            "description": "Amazonite, sometimes known as Amazon Stone, is a green variety of Feldspar and is believed to be a sacred stone in some cultures. A light aqua-green stone with white mottled flecks, the name is derived from the Amazon River after certain green stones were found in Brazil. It was extensively used by the ancient Egyptians and is said to give a cooling and soothing effect to the mental state",
-            "category": "beads",
-            "image": "https://m.media-amazon.com/images/I/41HvSeKhOLL._AC_.jpg",
-            "rating": {
-                "rate": 4.1,
-                "count": 10
-            }
-        },
-        {
-            "id": 49,
-            "title": "Gold Plated Butterfly Element Simple and Fashionable Temperament Butterfly Wing Earrings",
-            "price": 36,
-            "description": "Top quality: handpicked earrings for women. Safe for Sensitive Ears, Hypoallergenic Earrings, Nickel Free, Lead Free. Stylish-These elegant earrings: Either dress up or dress down, wedding earrings for brides will complete your stylish look in any outfit for casual, school, business, work, office, dates, dinner, parties and special occasions",
-            "category": "earrings",
-            "image": "https://m.media-amazon.com/images/I/61O3R+xHlCL._AC_UY741_.jpg",
-            "rating": {
-                "rate": 3.8,
-                "count": 23
-            }
-        },
-        {
-            "id": 50,
-            "title": "Round Diamond Earrings 14ct White Gold",
-            "price": 760,
-            "description": "The Round cut diamonds are naturally mined and weigh 1.37 carat, a J-K in colour and an VS1-VS2 Clarity Enhanced purity. The diamond is set in a beautiful solitaire 14K solid white gold Martini screw-back setting. The mount weighs 1.05 grams.The diameter of the diamonds are 5.60 mm and a depth of 3.16 mm and a diameter of 5.60 mm and depth of 3.60 mm.The diamond stud earrings are certified and graded by the GIE diamond lab and the RRP valuation given is 3550",
-            "category": "earrings",
-            "image": "https://m.media-amazon.com/images/I/41qNo03V9oL._AC_.jpg",
-            "rating": {
-                "rate": 4.7,
-                "count": 22
-            }
-        },
-        {
-            "id": 51,
-            "title": "Never Say Never 18k White Gold Ring",
-            "price": 830,
-            "description": "18k white gold ring with 12 brilliant cut diamonds of 0.15ct and 5 princess cut sapphires of 0.78ct. Weight; 6 grams of 18k gold we can make it the number you need in just 10 days. A piece of jewellery specially made for you in the number you order with the finest selected diamonds and the purest and deepest coloured sapphires and all set in 18k gold. A perfect piece of jewellery designed and made by master jewellers who care every millimetre of this piece to make it unique, with a strong 6 mm wide arm and 17 gemstones",
-            "category": "rings",
-            "image": "https://m.media-amazon.com/images/I/61FC96vMplL._AC_UY695_.jpg",
-            "rating": {
-                "rate": 4.1,
-                "count": 22
-            }
-        },
-        {
-            "id": 52,
-            "title": "Angel Wing Ring Sterling Silver Ring for Women",
-            "price": 22,
-            "description": "Give her your heart to love her and give her some wings to feel protected. Crafted in sterling silver, this angel wing will be perfect gift for her",
-            "category": "rings",
-            "image": "https://m.media-amazon.com/images/I/51fRyE-X++L._AC_UX569_.jpg",
-            "rating": {
-                "rate": 3.2,
-                "count": 25
-            }
-        },
-        {
-            "id": 53,
-            "title": "Elegant jewel box Unisex Oval custom signet ring in solid gold 9k, 14k, & 18k, Personalized signet ring",
-            "price": 320,
-            "description": "We produce our jewelry in different karats of gold. The cheaper one is k9 which contains 375/1000 pure gold while k14 contains 585/1000 pure gold and k18 750/1000. Another difference that affects the price is that k18 is much heavier than k9 due to the specific gravity of gold",
-            "category": "rings",
-            "image": "https://m.media-amazon.com/images/I/41k4WNE+PDL._SL1015_.jpg",
-            "rating": {
-                "rate": 4.1,
-                "count": 22
-            }
-        }
-    ]
+      ]
+    },
+    {
+      "selectedGoods": [],
+      "id": 2
+    },
+    {
+      "username": "Denis",
+      "email": "test@test.com",
+      "password": "password",
+      "sex": "Male",
+      "image": "https://pngimg.com/uploads/sheep/sheep_PNG2722.png",
+      "selectedGoods": [],
+      "id": 3
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "title": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+      "price": 109.95,
+      "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+      "category": "man's clothing",
+      "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+      "rating": {
+        "rate": 3.9,
+        "count": 120
+      }
+    },
+    {
+      "id": 2,
+      "title": "Mens Casual Premium Slim Fit T-Shirts ",
+      "price": 22.3,
+      "description": "Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight & soft fabric for breathable and comfortable wearing. And Solid stitched shirts with round neck made for durability and a great fit for casual fashion wear and diehard baseball fans. The Henley style round neckline includes a three-button placket.",
+      "category": "man's clothing",
+      "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+      "rating": {
+        "rate": 4.1,
+        "count": 259
+      }
+    },
+    {
+      "id": 3,
+      "title": "Mens Cotton Jacket",
+      "price": 55.99,
+      "description": "great outerwear jackets for Spring/Autumn/Winter, suitable for many occasions, such as working, hiking, camping, mountain/rock climbing, cycling, traveling or other outdoors. Good gift choice for you or your family member. A warm hearted love to Father, husband or son in this thanksgiving or Christmas Day.",
+      "category": "man's clothing",
+      "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+      "rating": {
+        "rate": 4.7,
+        "count": 500
+      }
+    },
+    {
+      "id": 4,
+      "title": "Mens Casual Slim Fit",
+      "price": 15.99,
+      "description": "The color could be slightly different between on the screen and in practice. / Please note that body builds vary by person, therefore, detailed size information should be reviewed below on the product description.",
+      "category": "man's clothing",
+      "image": "https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg",
+      "rating": {
+        "rate": 2.1,
+        "count": 430
+      }
+    },
+    {
+      "id": 5,
+      "title": "John Hardy Women's Legends Naga Gold & Silver Dragon Station Chain Bracelet",
+      "price": 695,
+      "description": "From our Legends Collection, the Naga was inspired by the mythical water dragon that protects the ocean's pearl. Wear facing inward to be bestowed with love and abundance, or outward for protection.",
+      "category": "jewelery",
+      "image": "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg",
+      "rating": {
+        "rate": 4.6,
+        "count": 400
+      }
+    },
+    {
+      "id": 6,
+      "title": "Solid Gold Petite Micropave ",
+      "price": 168,
+      "description": "Satisfaction Guaranteed. Return or exchange any order within 30 days.Designed and sold by Hafeez Center in the United States. Satisfaction Guaranteed. Return or exchange any order within 30 days.",
+      "category": "jewelery",
+      "image": "https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg",
+      "rating": {
+        "rate": 3.9,
+        "count": 70
+      }
+    },
+    {
+      "id": 7,
+      "title": "White Gold Plated Princess",
+      "price": 9.99,
+      "description": "Classic Created Wedding Engagement Solitaire Diamond Promise Ring for Her. Gifts to spoil your love more for Engagement, Wedding, Anniversary, Valentine's Day...",
+      "category": "jewelery",
+      "image": "https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_QL65_ML3_.jpg",
+      "rating": {
+        "rate": 3,
+        "count": 400
+      }
+    },
+    {
+      "id": 8,
+      "title": "Pierced Owl Rose Gold Plated Stainless Steel Double",
+      "price": 10.99,
+      "description": "Rose Gold Plated Double Flared Tunnel Plug Earrings. Made of 316L Stainless Steel",
+      "category": "jewelery",
+      "image": "https://fakestoreapi.com/img/51UDEzMJVpL._AC_UL640_QL65_ML3_.jpg",
+      "rating": {
+        "rate": 1.9,
+        "count": 100
+      }
+    },
+    {
+      "id": 9,
+      "title": "WD 2TB Elements Portable External Hard Drive - USB 3.0 ",
+      "price": 64,
+      "description": "USB 3.0 and USB 2.0 Compatibility Fast data transfers Improve PC Performance High Capacity; Compatibility Formatted NTFS for Windows 10, Windows 8.1, Windows 7; Reformatting may be required for other operating systems; Compatibility may vary depending on user’s hardware configuration and operating system",
+      "category": "electronics",
+      "image": "https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg",
+      "rating": {
+        "rate": 3.3,
+        "count": 203
+      }
+    },
+    {
+      "id": 10,
+      "title": "SanDisk SSD PLUS 1TB Internal SSD - SATA III 6 Gb/s",
+      "price": 109,
+      "description": "Easy upgrade for faster boot up, shutdown, application load and response (As compared to 5400 RPM SATA 2.5” hard drive; Based on published specifications and internal benchmarking tests using PCMark vantage scores) Boosts burst write performance, making it ideal for typical PC workloads The perfect balance of performance and reliability Read/write speeds of up to 535MB/s/450MB/s (Based on internal testing; Performance may vary depending upon drive capacity, host device, OS and application.)",
+      "category": "electronics",
+      "image": "https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg",
+      "rating": {
+        "rate": 2.9,
+        "count": 470
+      }
+    },
+    {
+      "id": 11,
+      "title": "Silicon Power 256GB SSD 3D NAND A55 SLC Cache Performance Boost SATA III 2.5",
+      "price": 109,
+      "description": "3D NAND flash are applied to deliver high transfer speeds Remarkable transfer speeds that enable faster bootup and improved overall system performance. The advanced SLC Cache Technology allows performance boost and longer lifespan 7mm slim design suitable for Ultrabooks and Ultra-slim notebooks. Supports TRIM command, Garbage Collection technology, RAID, and ECC (Error Checking & Correction) to provide the optimized performance and enhanced reliability.",
+      "category": "electronics",
+      "image": "https://fakestoreapi.com/img/71kWymZ+c+L._AC_SX679_.jpg",
+      "rating": {
+        "rate": 4.8,
+        "count": 319
+      }
+    },
+    {
+      "id": 12,
+      "title": "WD 4TB Gaming Drive Works with Playstation 4 Portable External Hard Drive",
+      "price": 114,
+      "description": "Expand your PS4 gaming experience, Play anywhere Fast and easy, setup Sleek design with high capacity, 3-year manufacturer's limited warranty",
+      "category": "electronics",
+      "image": "https://fakestoreapi.com/img/61mtL65D4cL._AC_SX679_.jpg",
+      "rating": {
+        "rate": 4.8,
+        "count": 400
+      }
+    },
+    {
+      "id": 13,
+      "title": "Acer SB220Q bi 21.5 inches Full HD (1920 x 1080) IPS Ultra-Thin",
+      "price": 599,
+      "description": "21. 5 inches Full HD (1920 x 1080) widescreen IPS display And Radeon free Sync technology. No compatibility for VESA Mount Refresh Rate: 75Hz - Using HDMI port Zero-frame design | ultra-thin | 4ms response time | IPS panel Aspect ratio - 16: 9. Color Supported - 16. 7 million colors. Brightness - 250 nit Tilt angle -5 degree to 15 degree. Horizontal viewing angle-178 degree. Vertical viewing angle-178 degree 75 hertz",
+      "category": "electronics",
+      "image": "https://fakestoreapi.com/img/81QpkIctqPL._AC_SX679_.jpg",
+      "rating": {
+        "rate": 2.9,
+        "count": 250
+      }
+    },
+    {
+      "id": 14,
+      "title": "Samsung 49-Inch CHG90 144Hz Curved Gaming Monitor (LC49HG90DMNXZA) – Super Ultrawide Screen QLED ",
+      "price": 999.99,
+      "description": "49 INCH SUPER ULTRAWIDE 32:9 CURVED GAMING MONITOR with dual 27 inch screen side by side QUANTUM DOT (QLED) TECHNOLOGY, HDR support and factory calibration provides stunningly realistic and accurate color and contrast 144HZ HIGH REFRESH RATE and 1ms ultra fast response time work to eliminate motion blur, ghosting, and reduce input lag",
+      "category": "electronics",
+      "image": "https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg",
+      "rating": {
+        "rate": 2.2,
+        "count": 140
+      }
+    },
+    {
+      "id": 15,
+      "title": "BIYLACLESEN Women's 3-in-1 Snowboard Jacket Winter Coats",
+      "price": 56.99,
+      "description": "Note:The Jackets is US standard size, Please choose size as your usual wear Material: 100% Polyester; Detachable Liner Fabric: Warm Fleece. Detachable Functional Liner: Skin Friendly, Lightweigt and Warm.Stand Collar Liner jacket, keep you warm in cold weather. Zippered Pockets: 2 Zippered Hand Pockets, 2 Zippered Pockets on Chest (enough to keep cards or keys)and 1 Hidden Pocket Inside.Zippered Hand Pockets and Hidden Pocket keep your things secure. Humanized Design: Adjustable and Detachable Hood and Adjustable cuff to prevent the wind and water,for a comfortable fit. 3 in 1 Detachable Design provide more convenience, you can separate the coat and inner as needed, or wear it together. It is suitable for different season and help you adapt to different climates",
+      "category": "women's clothing",
+      "image": "https://fakestoreapi.com/img/51Y5NI-I5jL._AC_UX679_.jpg",
+      "rating": {
+        "rate": 2.6,
+        "count": 235
+      }
+    },
+    {
+      "id": 16,
+      "title": "Lock and Love Women's Removable Hooded Faux Leather Moto Biker Jacket",
+      "price": 29.95,
+      "description": "100% POLYURETHANE(shell) 100% POLYESTER(lining) 75% POLYESTER 25% COTTON (SWEATER), Faux leather material for style and comfort / 2 pockets of front, 2-For-One Hooded denim style faux leather jacket, Button detail on waist / Detail stitching at sides, HAND WASH ONLY / DO NOT BLEACH / LINE DRY / DO NOT IRON",
+      "category": "women's clothing",
+      "image": "https://fakestoreapi.com/img/81XH0e8fefL._AC_UY879_.jpg",
+      "rating": {
+        "rate": 2.9,
+        "count": 340
+      }
+    },
+    {
+      "id": 17,
+      "title": "Rain Jacket Women Windbreaker Striped Climbing Raincoats",
+      "price": 39.99,
+      "description": "Lightweight perfet for trip or casual wear---Long sleeve with hooded, adjustable drawstring waist design. Button and zipper front closure raincoat, fully stripes Lined and The Raincoat has 2 side pockets are a good size to hold all kinds of things, it covers the hips, and the hood is generous but doesn't overdo it.Attached Cotton Lined Hood with Adjustable Drawstrings give it a real styled look.",
+      "category": "women's clothing",
+      "image": "https://fakestoreapi.com/img/71HblAHs5xL._AC_UY879_-2.jpg",
+      "rating": {
+        "rate": 3.8,
+        "count": 679
+      }
+    },
+    {
+      "id": 18,
+      "title": "MBJ Women's Solid Short Sleeve Boat Neck V ",
+      "price": 9.85,
+      "description": "95% RAYON 5% SPANDEX, Made in USA or Imported, Do Not Bleach, Lightweight fabric with great stretch for comfort, Ribbed on sleeves and neckline / Double stitching on bottom hem",
+      "category": "women's clothing",
+      "image": "https://fakestoreapi.com/img/71z3kpMAYsL._AC_UY879_.jpg",
+      "rating": {
+        "rate": 4.7,
+        "count": 130
+      }
+    },
+    {
+      "id": 19,
+      "title": "Opna Women's Short Sleeve Moisture",
+      "price": 7.95,
+      "description": "100% Polyester, Machine wash, 100% cationic polyester interlock, Machine Wash & Pre Shrunk for a Great Fit, Lightweight, roomy and highly breathable with moisture wicking fabric which helps to keep moisture away, Soft Lightweight Fabric with comfortable V-neck collar and a slimmer fit, delivers a sleek, more feminine silhouette and Added Comfort",
+      "category": "women's clothing",
+      "image": "https://fakestoreapi.com/img/51eg55uWmdL._AC_UX679_.jpg",
+      "rating": {
+        "rate": 4.5,
+        "count": 146
+      }
+    },
+    {
+      "id": 20,
+      "title": "DANVOUY Womens T Shirt Casual Cotton Short",
+      "price": 12.99,
+      "description": "95%Cotton,5%Spandex, Features: Casual, Short Sleeve, Letter Print,V-Neck,Fashion Tees, The fabric is soft and has some stretch., Occasion: Casual/Office/Beach/School/Home/Street. Season: Spring,Summer,Autumn,Winter.",
+      "category": "women's clothing",
+      "image": "https://fakestoreapi.com/img/61pHAEJ4NML._AC_UX679_.jpg",
+      "rating": {
+        "rate": 3.6,
+        "count": 145
+      }
+    },
+    {
+      "id": 21,
+      "title": "Samsung Galaxy S22 8/128GB Phantom Black",
+      "price": 900,
+      "description": "It’s our brightest innovation yet. The sensor pulls in more light, the Super Clear Glass dials downs lens flare, and fast-acting AI delivers near-instant intelligent processing",
+      "category": "phones",
+      "image": "https://content.rozetka.com.ua/goods/images/big/253279564.jpg",
+      "rating": {
+        "rate": 4.1,
+        "count": 23
+      }
+    },
+    {
+      "id": 22,
+      "title": "Apple iPhone 14 Pro 128GB Space Black",
+      "price": 1489,
+      "description": "AppleCare+ product must be purchased with an applicable Apple device. Purchase of AppleCare+ is not required to purchase Apple Device.",
+      "category": "phones",
+      "image": "https://content.rozetka.com.ua/goods/images/big/284920756.jpg",
+      "rating": {
+        "rate": 4.3,
+        "count": 25
+      }
+    },
+    {
+      "id": 23,
+      "title": "Xiaomi Redmi Note 10 Pro 6/128GB Onyx Gray",
+      "price": 221,
+      "description": "Challenge your boundaries with108 MP Distinctive, super-sharp and mind-blowing imaging system: With the combination of three high-end technologies, the camera is designed for night photography",
+      "category": "phones",
+      "image": "https://content1.rozetka.com.ua/goods/images/big/163432102.jpg",
+      "rating": {
+        "rate": 4.1,
+        "count": 22
+      }
+    },
+    {
+      "id": 24,
+      "title": "Infinix Note 11 (X663B) 6/128Gb NFC Celestial Snow",
+      "price": 186,
+      "description": "08 MP + 50x Super Zoom. Capture the moment in any light with Ultra Pixel technology and record 8K video—or take incredibly sharp photos from afar",
+      "category": "phones",
+      "image": "https://content.rozetka.com.ua/goods/images/big/280969020.jpg",
+      "rating": {
+        "rate": 4.9,
+        "count": 21
+      }
+    },
+    {
+      "id": 25,
+      "title": "Samsung Galaxy A33 5G 6/128GB Light Blue",
+      "price": 167,
+      "description": "The power of next-generation 5G data speeds brings a whole new experience to your mobile — from super smooth gaming and streaming, to ultra-fast sharing and downloading",
+      "category": "phones",
+      "image": "https://content2.rozetka.com.ua/goods/images/big/263964999.jpg",
+      "rating": {
+        "rate": 4,
+        "count": 28
+      }
+    },
+    {
+      "id": 26,
+      "title": "Samsung Galaxy S22 Ultra 8/128GB Phantom White",
+      "price": 976,
+      "description": "Our fastest, most powerful chip ever. That means, a faster CPU and GPU compared to Galaxy S21 Ultra. It’s an epic leap for smartphone technology",
+      "category": "phones",
+      "image": "https://content.rozetka.com.ua/goods/images/big/253282006.jpg",
+      "rating": {
+        "rate": 4.6,
+        "count": 21
+      }
+    },
+    {
+      "id": 27,
+      "title": "Windows 10 Home & Pro 64 Bit Operating System Recovery",
+      "price": 35,
+      "description": "Full Instructions Available from our Website with Live Help Desk Support Also Available... This recovery media can fix boot sector errors, missing files, broken DLL's broken installs, in fact it can fix almost any operating system problem and if required it can also initiate a complete reinstall. PLEASE CONTACT US USING OUR LIVE HELPDESK IF YOU HAVE ANY PROBLEMS AT ALL, WE WANT TO HELP YOU",
+      "category": "applications",
+      "image": "https://m.media-amazon.com/images/I/61p70RrFePL._AC_SL1024_.jpg",
+      "rating": {
+        "rate": 3.6,
+        "count": 56
+      }
+    },
+    {
+      "id": 28,
+      "title": "Laplink PCmover Ultimate 11",
+      "price": 40,
+      "description": "Moves your Applications, Files and Settings from an Old PC to a New PC | Includes Optional Ethernet Cable | 1 Use",
+      "category": "applications",
+      "image": "https://m.media-amazon.com/images/I/71X6xcBBRpL._AC_SL1500_.jpg",
+      "rating": {
+        "rate": 3.9,
+        "count": 45
+      }
+    },
+    {
+      "id": 29,
+      "title": "Driver Genius 22",
+      "price": 60,
+      "description": "Driver Genius Platinum helps you manage your drivers and boost your PC! If you regularly reinstall your system, you know how difficult and time-consuming it can often be to find the drivers you need for your PC. Driver Genius allows you to save all your drivers on your PC and restore them once the system has been reinstalled",
+      "category": "applications",
+      "image": "https://m.media-amazon.com/images/I/710LbhLhsEL._AC_SL1500_.jpg",
+      "rating": {
+        "rate": 3.9,
+        "count": 23
+      }
+    },
+    {
+      "id": 30,
+      "title": "Kaspersky Internet Security 2021",
+      "price": 45,
+      "description": "Kaspersky Internet Security helps you stay safe from cybercrime, viruses, Internet attacks and more - so you can do more with your computers, tablets and phones. Your PC, Mac, iOS and Android devices let you get more out of your digital life - so we'll help you protect them all",
+      "category": "applications",
+      "image": "https://m.media-amazon.com/images/I/615+4f3d3ZL._AC_SL1500_.jpg",
+      "rating": {
+        "rate": 3.8,
+        "count": 35
+      }
+    },
+    {
+      "id": 31,
+      "title": "Smart Watch Wireless Waterproof Sports Tracker Call Phone Watch with Black Leather Band",
+      "price": 120,
+      "description": "Smart watch made of durable material is a practical and useful tool for sports or phone calls.With IP67 waterproof,it can company with you anytime even when rainy or swimming.It is widely compatible with Android and IOS,and can be a supplement tool for your phone.With various stylish dials,the smart phone can be a great accessory to match your dressing",
+      "category": "smart watches",
+      "image": "https://m.media-amazon.com/images/I/61QYbxl6s5L._SL1053_.jpg",
+      "rating": {
+        "rate": 4.1,
+        "count": 67
+      }
+    },
+    {
+      "id": 32,
+      "title": "Liummrcy Smart Watch Fitness Watch Band",
+      "price": 150,
+      "description": "Smart watch's main functions: display the current time, display exercise steps, exercise more efficient, display current heart rate, accurate real time measurement, display steps and mileage, display exercise calories, and display current power. Bluetooth smart reminder and alarm clock reminder. Call reminder, vibration reminder, don't miss important calls",
+      "category": "smart watches",
+      "image": "https://m.media-amazon.com/images/I/51oTRnDUlKL._AC_SL1001_.jpg",
+      "rating": {
+        "rate": 1,
+        "count": 89
+      }
+    },
+    {
+      "id": 33,
+      "title": "Samsung Galaxy Watch4 Smart Watch",
+      "price": 200,
+      "description": "Compete with friends and family - in a fun competition through a live message board. Challenges come with commemorative badges and a point system to make exercise fun, motivating and socially rewarding",
+      "category": "smart watches",
+      "image": "https://m.media-amazon.com/images/I/61t-PpumXyL._AC_SL1500_.jpg",
+      "rating": {
+        "rate": 5,
+        "count": 42
+      }
+    },
+    {
+      "id": 34,
+      "title": "Apple Watch Series 7",
+      "price": 250,
+      "description": "For your own benefit and protection it is important that you read the AppleCare+ Terms and Conditions, the Insurance Product Information Document and the Terms of Business carefully before purchase",
+      "category": "smart watches",
+      "image": "https://m.media-amazon.com/images/I/51Aq-9XI+KL._AC_SL1500_.jpg",
+      "rating": {
+        "rate": 4.9,
+        "count": 21
+      }
+    },
+    {
+      "id": 35,
+      "title": "ASUS Vivobook 15 X1500EA 15.6\" Full HD Laptop (Intel i3-1115G4, 8GB RAM, 256GB SSD, Windows 11)",
+      "price": 430,
+      "description": "Powered by Intel's Core i3-1115G4 Processor,Screen: 15.6-Inch LED Backlit FHD (1920 x 1080) 16:9,System Memory: 8GB RAM,Storage: 256GB PCIe SSD,OS: Microsoft Windows 11",
+      "category": "laptops",
+      "image": "https://m.media-amazon.com/images/I/61mEoDhgBoL._AC_SL1000_.jpg",
+      "rating": {
+        "rate": 4.9,
+        "count": 21
+      }
+    },
+    {
+      "id": 36,
+      "title": "Lenovo IdeaPad 5i 15 Inch Full HD Laptop (Intel Core i5, 8GB RAM, 256GB SSD Storage, Intel Iris Xe Graphics, Windows 10S) – Platinum Grey Metal",
+      "price": 700,
+      "description": "The smart choice: The last thing you need is a hacker peeking into your life through your webcam, so the IdeaPad 5i with a physical privacy shutter blocks the camera when you don't want to be seen. Using a Post-it note is so 'ok boomer'",
+      "category": "laptops",
+      "image": "https://m.media-amazon.com/images/I/71Y2NpxZEiS._AC_SL1500_.jpg",
+      "rating": {
+        "rate": 4.3,
+        "count": 28
+      }
+    },
+    {
+      "id": 37,
+      "title": "ASUS Vivobook 15 X515JA 15.6\" Full HD Laptop (Intel Core i5, 8GB RAM, 512GB SSD, Windows 11), Silver",
+      "price": 650,
+      "description": "Whether for work or play, ASUS X515 is the entry-level laptop that delivers powerful performance and immersive visuals. Its NanoEdge display boasts wide 178° viewing angles and a matte anti-glare coating for a truly engaging experience. Inside, it's powered by up to an Intel Core i7 processor with 16 GB 2400 MHz RAM, and features NVIDIA GeForce MX330. A dual-storage design with up to a 1 TB PCIe SSD and a 1 TB HDD gives you the perfect combination of large storage capacity and fast data read / write speeds. There's also Intel Optane memory support1 to help speed things up even more",
+      "category": "laptops",
+      "image": "https://m.media-amazon.com/images/I/613q5FiugaL._AC_SL1000_.jpg",
+      "rating": {
+        "rate": 4.1,
+        "count": 40
+      }
+    },
+    {
+      "id": 38,
+      "title": "4K Mini PC, Desktop Computer, Server",
+      "price": 730,
+      "description": "Intel 6 Cores I7 8750H, Windows 11 Pro or Linux Ubuntu, HUNSN BM21b, AC WiFi, BT, DP, HDMI, 6 x USB3.0, Type-C, LAN, Smart Fan, 64G RAM, 512G M.2 2280 NVME SSD",
+      "category": "computers",
+      "image": "https://m.media-amazon.com/images/I/61IbLG1SGcL._AC_SL1500_.jpg",
+      "rating": {
+        "rate": 3.7,
+        "count": 47
+      }
+    },
+    {
+      "id": 39,
+      "title": "Mini PC Mini Desktop Computer",
+      "price": 640,
+      "description": "Windows 10 8GB RAM 256GB SSD Intel Celeron J4205 Support 2.4G 5G WiFi Gigabit Ethernet HDMI USB 3.0 BT4.0 Support Auto Power On",
+      "category": "computers",
+      "image": "https://m.media-amazon.com/images/I/61XrrvZmseL._AC_SL1500_.jpg",
+      "rating": {
+        "rate": 4.2,
+        "count": 43
+      }
+    },
+    {
+      "id": 40,
+      "title": "Dell OptiPlex 3020 SFF",
+      "price": 460,
+      "description": "4th Gen Core i5-4590 8GB 240GB SSD DVDRW Windows 10 Professional 64-Bit Desktop PC Computer (Renewed)",
+      "category": "computers",
+      "image": "https://m.media-amazon.com/images/I/81CLPRbCZ-L._AC_SL1500_.jpg",
+      "rating": {
+        "rate": 3.4,
+        "count": 24
+      }
+    },
+    {
+      "id": 41,
+      "title": "Lenovo Tab P11 Plus 11 Inch 2K Tablet",
+      "price": 180,
+      "description": "MediaTek Helio G90T,Octa-Core 2.0GHz, 6GB RAM, 128GB Storage, Android 11, multi-touch screen",
+      "category": "tablets",
+      "image": "https://m.media-amazon.com/images/I/61j+7cf24bL._AC_SL1500_.jpg",
+      "rating": {
+        "rate": 3.8,
+        "count": 37
+      }
+    },
+    {
+      "id": 42,
+      "title": "Lenovo Tab M10 10.1 Inch HD Tablet",
+      "price": 140,
+      "description": "Your family tablet: A powerful tablet that suits all your family’s needs with dedicated user profiles, parental controls and a Kids Mode for your peace of mind",
+      "category": "tablets",
+      "image": "https://m.media-amazon.com/images/I/71FARLZ939L._AC_SL1500_.jpg",
+      "rating": {
+        "rate": 3.1,
+        "count": 69
+      }
+    },
+    {
+      "id": 43,
+      "title": "Samsung Galaxy Tab S8 11 Inch 256GB",
+      "price": 210,
+      "description": "Built to take fun on the go. This 11” LCD screen has a ton to offer. From 5G to a huge battery, and a 12MP Ultra-Wide Front Camera. And of course, the S Pen is included",
+      "category": "tablets",
+      "image": "https://m.media-amazon.com/images/I/71p-fDFOZ6L._AC_SL1500_.jpg",
+      "rating": {
+        "rate": 4.2,
+        "count": 39
+      }
+    },
+    {
+      "id": 44,
+      "title": "Samsung Galaxy Tab S8 Ultra 14.6 Inch 128GB Wi-Fi Android Tablet Graphite",
+      "price": 765,
+      "description": "More than just space. The largest Samsung Galaxy Tab S is designed so you can create like a pro. Shoot with our first ultra wide front camera in a tablet and edit on the largest screen in the Samsung Galaxy Tab S.",
+      "category": "tablets",
+      "image": "https://m.media-amazon.com/images/I/81kcWhUr8KL._AC_SL1500_.jpg",
+      "rating": {
+        "rate": 4.6,
+        "count": 90
+      }
+    },
+    {
+      "id": 45,
+      "title": "Baby Boys Donald Duck Pyjama Set Long Sleeve Pjs Nightwear",
+      "price": 7,
+      "description": "Baby Boys Donald Duck Pyjama Set Long Sleeve Pjs Nightwear Size 6 to 24 months,Lovely Long Sleeved Top With Elasticated Bottoms,100% Cotton",
+      "category": "baby's clothing",
+      "image": "https://m.media-amazon.com/images/I/71sNEARzQ-L._AC_UY606_.jpg",
+      "rating": {
+        "rate": 3.4,
+        "count": 20
+      }
+    },
+    {
+      "id": 46,
+      "title": "Purple Amethyst Grade A Plain Round Beads 12mm Strand of 30+ Pieces",
+      "price": 25,
+      "description": "Amethyst is a variety of Quartz coloured by traces of Manganese, Titanium and Iron. Amethyst is a powerful and protective stone. The finest coloured specimens of Amethyst are found in Brazil and the Urals. It is said to guard against psychic attack, transmitting the energy into love and protecting the wearer from all types of harm. Medieval European soldiers wore Amethyst amulets as protection in battle and it is considered to be a strong antidote against drunkenness. Amethyst varies in colour with regular Amethyst usually being a deep grape colour",
+      "category": "beads",
+      "image": "https://m.media-amazon.com/images/I/41NUSHTaXaL._AC_.jpg",
+      "rating": {
+        "rate": 4.2,
+        "count": 12
+      }
+    },
+    {
+      "id": 47,
+      "title": "Efco 1400829 10 mm 53-Piece Wooden Beads Hole, Red",
+      "price": 22,
+      "description": "Make you own jewellery with these sturdy wooden beads. There are lots of colours and sizes available. Mix and match or buy a bag of assorted colours or sizes",
+      "category": "beads",
+      "image": "https://m.media-amazon.com/images/I/61NESTIL3bL._AC_SL1000_.jpg",
+      "rating": {
+        "rate": 4.2,
+        "count": 17
+      }
+    },
+    {
+      "id": 48,
+      "title": "Multicolour Amazonite Grade A Plain Round Beads 6mm Strand of 60+ Pieces",
+      "price": 8,
+      "description": "Amazonite, sometimes known as Amazon Stone, is a green variety of Feldspar and is believed to be a sacred stone in some cultures. A light aqua-green stone with white mottled flecks, the name is derived from the Amazon River after certain green stones were found in Brazil. It was extensively used by the ancient Egyptians and is said to give a cooling and soothing effect to the mental state",
+      "category": "beads",
+      "image": "https://m.media-amazon.com/images/I/41HvSeKhOLL._AC_.jpg",
+      "rating": {
+        "rate": 4.1,
+        "count": 10
+      }
+    },
+    {
+      "id": 49,
+      "title": "Gold Plated Butterfly Element Simple and Fashionable Temperament Butterfly Wing Earrings",
+      "price": 36,
+      "description": "Top quality: handpicked earrings for women. Safe for Sensitive Ears, Hypoallergenic Earrings, Nickel Free, Lead Free. Stylish-These elegant earrings: Either dress up or dress down, wedding earrings for brides will complete your stylish look in any outfit for casual, school, business, work, office, dates, dinner, parties and special occasions",
+      "category": "earrings",
+      "image": "https://m.media-amazon.com/images/I/61O3R+xHlCL._AC_UY741_.jpg",
+      "rating": {
+        "rate": 3.8,
+        "count": 23
+      }
+    },
+    {
+      "id": 50,
+      "title": "Round Diamond Earrings 14ct White Gold",
+      "price": 760,
+      "description": "The Round cut diamonds are naturally mined and weigh 1.37 carat, a J-K in colour and an VS1-VS2 Clarity Enhanced purity. The diamond is set in a beautiful solitaire 14K solid white gold Martini screw-back setting. The mount weighs 1.05 grams.The diameter of the diamonds are 5.60 mm and a depth of 3.16 mm and a diameter of 5.60 mm and depth of 3.60 mm.The diamond stud earrings are certified and graded by the GIE diamond lab and the RRP valuation given is 3550",
+      "category": "earrings",
+      "image": "https://m.media-amazon.com/images/I/41qNo03V9oL._AC_.jpg",
+      "rating": {
+        "rate": 4.7,
+        "count": 22
+      }
+    },
+    {
+      "id": 51,
+      "title": "Never Say Never 18k White Gold Ring",
+      "price": 830,
+      "description": "18k white gold ring with 12 brilliant cut diamonds of 0.15ct and 5 princess cut sapphires of 0.78ct. Weight; 6 grams of 18k gold we can make it the number you need in just 10 days. A piece of jewellery specially made for you in the number you order with the finest selected diamonds and the purest and deepest coloured sapphires and all set in 18k gold. A perfect piece of jewellery designed and made by master jewellers who care every millimetre of this piece to make it unique, with a strong 6 mm wide arm and 17 gemstones",
+      "category": "rings",
+      "image": "https://m.media-amazon.com/images/I/61FC96vMplL._AC_UY695_.jpg",
+      "rating": {
+        "rate": 4.1,
+        "count": 22
+      }
+    },
+    {
+      "id": 52,
+      "title": "Angel Wing Ring Sterling Silver Ring for Women",
+      "price": 22,
+      "description": "Give her your heart to love her and give her some wings to feel protected. Crafted in sterling silver, this angel wing will be perfect gift for her",
+      "category": "rings",
+      "image": "https://m.media-amazon.com/images/I/51fRyE-X++L._AC_UX569_.jpg",
+      "rating": {
+        "rate": 3.2,
+        "count": 25
+      }
+    },
+    {
+      "id": 53,
+      "title": "Elegant jewel box Unisex Oval custom signet ring in solid gold 9k, 14k, & 18k, Personalized signet ring",
+      "price": 320,
+      "description": "We produce our jewelry in different karats of gold. The cheaper one is k9 which contains 375/1000 pure gold while k14 contains 585/1000 pure gold and k18 750/1000. Another difference that affects the price is that k18 is much heavier than k9 due to the specific gravity of gold",
+      "category": "rings",
+      "image": "https://m.media-amazon.com/images/I/41k4WNE+PDL._SL1015_.jpg",
+      "rating": {
+        "rate": 4.1,
+        "count": 22
+      }
+    }
+  ]
 }

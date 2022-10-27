@@ -24,7 +24,7 @@ export default function Category() {
         if (text === 'men\'s clothing') {
             text = 'man\'s clothing'
         }
-        navigate(`product/${text}/${grid}`)
+        navigate(`${text}/${grid}`)
     }
 
 
