@@ -16,7 +16,7 @@ import { useTheme } from '@emotion/react';
 import SearchIcon from '@mui/icons-material/Search';
 import ClearIcon from '@mui/icons-material/Clear';
 import style from './Header.module.css'
-import { Link, NavLink } from 'react-router-dom';
+import { Link, NavLink, useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
 import { logoutUser, setAuth, setUser } from '../../store/userSlice';
@@ -48,11 +48,16 @@ const Header = () => {
         setAnchorElUser(null);
     };
 
+    const navigate = useNavigate();
+
     const selectSetting = (e) => {
         if (e.target.innerHTML === 'Logout') {
             dispatch(logoutUser())
             dispatch(setAuth())
             localStorage.setItem('shopEmail', '')
+        }
+        if (e.target.innerHTML === 'Profile') {
+            navigate('/profile')
         }
     }
 
