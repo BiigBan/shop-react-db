@@ -50,6 +50,7 @@ export const loginUser = createAsyncThunk(
             if (typeof res === 'string') {
                 return res
             }
+            localStorage.setItem('shopEmail', res.data[0].email);
             return res.data[0];
         } catch (error) {
             return error

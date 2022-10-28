@@ -40,10 +40,10 @@ export const userAPI = {
             if (response.data.length === 1) {
                 if (response.data[0].email === email && response.data[0].password === password) {
                     return response
+                } else {
+                    const message = 'Incorrect email or password'
+                    return message
                 }
-            } else {
-                const message = 'Incorrect email or password'
-                return message
             }
         })
     }
