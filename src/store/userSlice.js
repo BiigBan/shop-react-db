@@ -6,9 +6,7 @@ export const registerUser = createAsyncThunk(
     async function (userData, dispatch) {
         try {
             const { data } = await userAPI.register(userData)
-            let id = data.id;
-            let result = { id, ...data.data }
-            return result;
+            return data;
         } catch (error) {
             return error
         }

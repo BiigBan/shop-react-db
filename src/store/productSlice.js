@@ -28,10 +28,9 @@ export const getProductOrder = createAsyncThunk(
 
 export const paginationProduct = createAsyncThunk(
     'product/paginationProduct',
-    async function ({page}, {dispatch}) {
+    async function ({page, currentCategory}, {dispatch}) {
         try {
-            console.log(page);
-            const {data} = await productAPI.pagination(page)
+            const {data} = await productAPI.pagination(page, currentCategory)
             return data;
         } catch (error) {
             console.log(error);

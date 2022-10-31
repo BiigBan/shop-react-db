@@ -13,10 +13,16 @@ export const productAPI = {
             return { data: response.data.filter(el => el.category === category) }
         })
     },
-    pagination: (page, limit='20') => {
+    pagination: (page,currentCategory, limit='20') => {
+        if(currentCategory > 1){
+        return instance.get(`products?q=${currentCategory}&_page=${page}&_limit=${limit}`).then(response => {
+            return response;
+        })
+    } else {
         return instance.get(`products?_page=${page}&_limit=${limit}`).then(response => {
             return response;
         })
+    }
     }
 }
 
@@ -28,7 +34,8 @@ export const userAPI = {
     },
     exist: (email) => {
         return instance.get(`users?q=${email}`).then(response => {
-            if (response.data === 0) {
+            console.log(response);
+            if(response.data.length === 0){
                 return response.data;
             } else {
                 return 'User is exist'

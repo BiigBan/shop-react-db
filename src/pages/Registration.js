@@ -52,9 +52,9 @@ export default function Login() {
         validationSchema: validationSchema,
         onSubmit: async (values) => {
             await dispatch(checkExistUser(values.email));
-            setEmail(values.email)
-            setUserValues(values)
-            setUser('')
+            await setEmail(values.email)
+            await setUserValues(values)
+            await setUser('')
             if (existUser) {
                 dispatch(setNullExistUser())
             }

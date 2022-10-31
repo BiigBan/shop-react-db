@@ -7,17 +7,22 @@ import { paginationProduct } from '../../store/productSlice';
 
 export default function PaginationComponent() {
 
-  const [page, setPage] = React.useState(1);
   const [searchPage, setSearchPage] = useSearchParams();
+  let currentPage = searchPage.get('page');
+  if(currentPage === null){
+    currentPage = 1;
+  }
+  const [page, setPage] = React.useState(+currentPage);
   const handleChange = (event, value) => {
     setPage(value);
   };
   
   const searchParam = searchPage.get('grid');
   const dispatch = useDispatch();
+  const currentCategory = useSelector(state => state.product.currentCategory)
 
   useEffect(() => {
-    dispatch(paginationProduct({page}))
+    dispatch(paginationProduct({page, currentCategory}))
     setSearchPage({grid: searchParam ,page: page})
   }, [page])
 
