@@ -5,7 +5,7 @@ import FilterListIcon from '@mui/icons-material/FilterList';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import { Box } from '@mui/system'
 import React, { useState } from 'react'
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useSearchParams } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 
 export default function Category() {
@@ -19,12 +19,15 @@ export default function Category() {
     const theme = useTheme()
     const navigate = useNavigate();
 
+    const [searchParam, setSearchParam] = useSearchParams();
+
     const selectCategory = (event) => {
         let text = event.target.innerHTML.toLowerCase();
         if (text === 'men\'s clothing') {
             text = 'man\'s clothing'
         }
-        navigate(`${text}/${grid}`)
+        // searchParam.get('')
+        navigate(`${text}`)
     }
 
 

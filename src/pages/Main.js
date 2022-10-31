@@ -1,7 +1,7 @@
 import { Box } from '@mui/material'
-import React, { useEffect, useState } from 'react'
+import React, { useEffect} from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { useParams } from 'react-router-dom'
+import { useParams, useSearchParams } from 'react-router-dom'
 import Settings from './../components/Main/Settings/Settings'
 import RightSetting from './../components/Main/Settings/RightSetting'
 import RowComponent from './../components/Main/Row/Row'
@@ -9,13 +9,16 @@ import GridComponent from './../components/Main/Grid/Grid'
 import { getProduct, getProductOrder, setCategory } from '../store/productSlice'
 import Navbar from '../components/Navbar/Navbar'
 import Loader from '../components/@loader/Loader'
+import PaginationComponent from '../components/pagination/PaginationCompponent'
 
 export default function Main() {
     const dispatch = useDispatch();
     const productsStore = useSelector(state => state.product.products);
 
+    const [searchParam, setSearchParam] = useSearchParams();
+
     const { category } = useParams();
-    const { grid } = useParams();
+    const grid = searchParam.get('grid') || 'grid';
 
     useEffect(() => {
         dispatch(getProductOrder({ category: category }))
@@ -24,7 +27,7 @@ export default function Main() {
 
     useEffect(() => {
         if (!category) dispatch(getProduct())
-
+        setSearchParam({grid: grid})
     }, [])
 
     const loading = useSelector(state => state.user.loading);
@@ -46,6 +49,9 @@ export default function Main() {
                         <RightSetting />
                     </Box>
                     {grid === 'row' ? <RowComponent products={productsStore} /> : <GridComponent products={productsStore} />}
+                    <Box sx={{mt: '20px', display: 'flex', justifyContent: 'center'}}>
+                        <PaginationComponent/>
+                    </Box>
                 </Box>
             </Box>
         </Box>

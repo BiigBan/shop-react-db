@@ -1,6 +1,5 @@
 import React from 'react'
 import AlreadyButtonGroup from '../../@alreadyComponent/ButtonGroup'
-import ButtonGroupComponent from './ButtonGroup'
 import { ReactComponent as row } from './../../../assets/Settings/row.svg'
 import { ReactComponent as grid } from './../../../assets/Settings/grid.svg'
 import { Box } from '@mui/material'

@@ -12,6 +12,11 @@ export const productAPI = {
         return instance.get(`products?q=${category}`).then(response => {
             return { data: response.data.filter(el => el.category === category) }
         })
+    },
+    pagination: (page, limit='20') => {
+        return instance.get(`products?_page=${page}&_limit=${limit}`).then(response => {
+            console.log(response);
+        })
     }
 }
 

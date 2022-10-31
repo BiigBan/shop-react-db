@@ -26,6 +26,17 @@ export const getProductOrder = createAsyncThunk(
     }
 )
 
+export const paginationProduct = createAsyncThunk(
+    'product/paginationProduct',
+    async function ({page}, {dispatch}) {
+        try {
+            const data = await productAPI.pagination(page)
+        } catch (error) {
+            console.log(error);
+        }
+    }
+)
+
 const productSlice = createSlice({
     name: 'product',
     initialState: {
@@ -45,6 +56,9 @@ const productSlice = createSlice({
         ],
         status: null,
         currentCategory: '',
+        allProduct: 0,
+        limitProducts: 20,
+        currentPage: 1,
     },
     reducers: {
         setCategory: (state, action) => {
@@ -73,6 +87,7 @@ const productSlice = createSlice({
         [getProduct.fulfilled]: (state, action) => {
             state.status = 'resolved';
             state.products = action.payload;
+            state.allProduct = action.payload.length;
         },
         [getProduct.rejected]: (state, action) => {
             state.status = 'error';

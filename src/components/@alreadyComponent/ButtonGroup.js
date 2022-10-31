@@ -5,27 +5,18 @@ import { useTheme } from '@emotion/react';
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { setGrid } from '../../store/globalSlice';
-import { useNavigate, useParams } from 'react-router-dom';
+import { useNavigate, useParams, useSearchParams } from 'react-router-dom';
 
 export default function AlreadyButtonGroup({ title, values }) {
-    const {grid} = useParams()
-    const [alignment, setAlignment] = React.useState(grid || `${values[1]}`);
+    const [gridParam, setGridParam] = useSearchParams();
+    const grid = gridParam.get('grid')
+    const [alignment, setAlignment] = React.useState(grid || values[1]);
+
     const dispatch = useDispatch();
-    const navigate = useNavigate();
+
     useEffect(() => {
-        if (alignment === 'row' || alignment === 'grid') {
-            if (!window.location.pathname.split('/').includes('grid') && !window.location.pathname.split('/').includes('row')) {
-                navigate(`${window.location.pathname}/${alignment}`)
-            }
-            else {
-                let url = window.location.pathname.split('/');
-                url.pop();
-                let cache = url.push(alignment)
-                let res = url.join('/')
-                navigate(`${res}`)
-            }
-            dispatch(setGrid({ alignment }))
-        }
+        setGridParam({grid: alignment})
+        dispatch(setGrid({ alignment }))
     }, [alignment])
 
 
