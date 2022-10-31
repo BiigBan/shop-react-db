@@ -19,6 +19,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
 import { logoutUser, setAuth, setUser } from '../../store/userSlice';
+import { searchProduct } from '../../store/productSlice';
 
 const pages = ['Sign in', 'My cart'];
 const settings = ['Profile', 'Settings', 'Logout'];
@@ -64,6 +65,20 @@ const Header = () => {
     const isAuth = useSelector(state => state.isAuth);
     const dispatch = useDispatch();
 
+
+    const handleKeyUp = e => {
+        if (e.key === 'Enter') {
+            dispatch(searchProduct(search))
+            setSearch('')
+        }
+    }
+
+    const handleSearch = () => {
+        dispatch(searchProduct(search))
+        setSearch('')
+    }
+
+
     useEffect(() => {
         if (!isAuth) {
             const email = localStorage.getItem('shopEmail');
@@ -72,6 +87,7 @@ const Header = () => {
             }
         }
     }, [])
+    
 
     return (
         <AppBar sx={{ boxShadow: 'none' }} position="static">
@@ -88,7 +104,7 @@ const Header = () => {
                     >
                         <MenuIcon />
                     </IconButton>
-                    <Link to='/product'>
+                    <Link to='/'>
                         <IconButton sx={{ borderRadius: '10px' }}>
                             <Box sx={{ maxWidth: '176px' }}>
                                 <img style={{ maxWidth: '100%' }} src={logo} alt='logo of web site' />
@@ -123,16 +139,18 @@ const Header = () => {
                 {/*on Desktop */}
                 <Box sx={{ display: { xs: 'none', md: 'flex' }, flexGrow: 1 }}>
                     <Box sx={{ width: '176px', flexGrow: 1, display: 'flex' }}>
-                        <Link to='/product'>
+                        <Link to='/'>
                             <IconButton sx={{ borderRadius: '10px' }}>
                                 <img style={{ width: '176px' }} src={logo} alt='logo of web site' />
                             </IconButton>
                         </Link>
-                        <Box sx={{ ml: '50px', display: 'flex', alignSelf: 'center', alignItems: 'center', background: '#e3e3e3', height: '48px', borderRadius: '99px', px: '15px', maxWidth: '600px' }}>
+                        <Box sx={{ ml: '50px', display: 'flex', alignSelf: 'center', alignItems: 'center', background: '#efeeee', height: '48px', borderRadius: '99px', px: '15px', maxWidth: '600px' }}>
+                        <IconButton onClick={handleSearch}>
                             <SearchIcon sx={{ fill: `${theme.palette.primary.contrastText}` }} />
-                            <input value={search} onChange={(e) => setSearch(e.target.value)} className={style.input} type="text" />
+                            </IconButton>
+                            <input onKeyUp={(e) => handleKeyUp(e)} value={search} onChange={(e) => setSearch(e.target.value)} className={style.input} type="text" />
                             <IconButton onClick={() => setSearch('')}>
-                                <ClearIcon sx={{ fill: `${theme.palette.secondary.dark}` }} />
+                                <ClearIcon sx={{ fill: `${theme.palette.secondary.main}`}} />
                             </IconButton>
                         </Box>
                     </Box>

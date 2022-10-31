@@ -38,6 +38,21 @@ export const paginationProduct = createAsyncThunk(
     }
 )
 
+export const searchProduct = createAsyncThunk(
+    'product/searchProduct',
+    async function (value, {dispatch}) {
+        try {
+            const {data} = await productAPI.search(value);
+            if (data.length === 0){
+                return 'The goods doesn`t exist'
+            }
+            return data
+        } catch (error) {
+            console.log(error);
+        }
+    }
+)
+
 const productSlice = createSlice({
     name: 'product',
     initialState: {
@@ -112,6 +127,22 @@ const productSlice = createSlice({
             state.products = action.payload;
         },
         [paginationProduct.rejected]: (state, action) => {
+            state.status = 'error';
+        },
+        [searchProduct.pending]: (state, action) => {
+            state.status = 'loading';
+        },
+        [searchProduct.fulfilled]: (state, action) => {
+            state.status = 'resolved';
+            if(typeof action.payload === 'string'){
+                state.products = [];
+                state.error = action.payload;
+            } else {
+            state.products = action.payload;
+            // state.error = '';
+            }
+        },
+        [searchProduct.rejected]: (state, action) => {
             state.status = 'error';
         },
     }

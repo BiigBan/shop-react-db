@@ -23,6 +23,11 @@ export const productAPI = {
             return response;
         })
     }
+    },
+    search: (data) => {
+        return instance.get(`products?q=${data}`).then( response => {
+            return response
+        })
     }
 }
 
