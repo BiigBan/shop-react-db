@@ -19,6 +19,8 @@ export default function Main() {
 
     const { category } = useParams();
     const grid = searchParam.get('grid') || 'grid';
+    let page = searchParam.get('page');
+    page === null ? page = 1 : page = page;
 
     useEffect(() => {
         dispatch(getProductOrder({ category: category }))
@@ -27,7 +29,7 @@ export default function Main() {
 
     useEffect(() => {
         if (!category) dispatch(getProduct())
-        setSearchParam({grid: grid})
+        setSearchParam({grid: grid, page: page});
     }, [])
 
     const loading = useSelector(state => state.user.loading);

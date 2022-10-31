@@ -30,7 +30,9 @@ export const paginationProduct = createAsyncThunk(
     'product/paginationProduct',
     async function ({page}, {dispatch}) {
         try {
-            const data = await productAPI.pagination(page)
+            console.log(page);
+            const {data} = await productAPI.pagination(page)
+            return data;
         } catch (error) {
             console.log(error);
         }
@@ -98,8 +100,19 @@ const productSlice = createSlice({
         [getProductOrder.fulfilled]: (state, action) => {
             state.status = 'resolved';
             state.products = action.payload;
+            state.allProduct = action.payload.length;
         },
         [getProductOrder.rejected]: (state, action) => {
+            state.status = 'error';
+        },
+        [paginationProduct.pending]: (state, action) => {
+            state.status = 'loading';
+        },
+        [paginationProduct.fulfilled]: (state, action) => {
+            state.status = 'resolved';
+            state.products = action.payload;
+        },
+        [paginationProduct.rejected]: (state, action) => {
             state.status = 'error';
         },
     }

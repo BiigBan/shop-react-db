@@ -15,7 +15,7 @@ export const productAPI = {
     },
     pagination: (page, limit='20') => {
         return instance.get(`products?_page=${page}&_limit=${limit}`).then(response => {
-            console.log(response);
+            return response;
         })
     }
 }
